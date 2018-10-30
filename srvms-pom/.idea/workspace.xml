@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="310a09fb-bf82-47cf-866e-6010c696a0a0" name="Default" comment="第二次测试">
+    <list default="true" id="310a09fb-bf82-47cf-866e-6010c696a0a0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../srvms-web/target/classes/com/wgb/controller/UserLoginController.class" afterPath="$PROJECT_DIR$/../srvms-web/target/classes/com/wgb/controller/UserLoginController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../srvms-web/target/srvms-web-1.0.0/WEB-INF/classes/com/wgb/controller/UserLoginController.class" afterPath="$PROJECT_DIR$/../srvms-web/target/srvms-web-1.0.0/WEB-INF/classes/com/wgb/controller/UserLoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/UserLoginController.java" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/UserLoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="srvms-pom.iws" />
@@ -813,12 +812,19 @@
       <created>1540884330041</created>
       <option name="number" value="Default" />
       <updated>1540884330041</updated>
-      <workItem from="1540884332869" duration="14197000" />
+      <workItem from="1540884332869" duration="14275000" />
     </task>
+    <task id="LOCAL-00001" summary="第二次测试">
+      <created>1540901455405</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540901455405</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14197000" />
+    <option name="totallyTimeSpent" value="14275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="705" extended-state="0" />
@@ -903,7 +909,8 @@
     </option>
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
     <MESSAGE value="第一次测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次测试" />
+    <MESSAGE value="第二次测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="第二次测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
