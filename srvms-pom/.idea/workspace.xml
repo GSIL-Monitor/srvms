@@ -1,856 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="310a09fb-bf82-47cf-866e-6010c696a0a0" name="Default" comment="第一次测试">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/images/0.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/font/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/font/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/Uploader.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/addimage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/addimg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/images/alignicon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/image/images/alignicon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/images/alignicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/alldeletebtnhoverskin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/alldeletebtnupskin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/anchor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/arrow_down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/arrow_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/images/bface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/template/images/bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/images/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/background/images/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/image/images/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/brush.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/button-bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/cancelbutton.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/center_focus.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/images/cface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/charts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/charts/images/charts0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/charts/images/charts1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/charts/images/charts2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/charts/images/charts3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/charts/images/charts4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/charts/images/charts5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/zh-cn/images/copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/cursor_h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/cursor_h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/cursor_v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/cursor_v.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/deletedisable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/deleteenable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/delimg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/delimgH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/dialog-title-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/table/dragicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/empty.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/emptyH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/eraser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/images/fface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/images/file-icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/file-icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/images/file-icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/file-icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/filescan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/font/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/font/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/font/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/font/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/font/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/font/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/font/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/font/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/highlighted.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/layer/skin/default/icon-ext.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/layer/skin/default/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/icons-all.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/images/icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/image/images/icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/icons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/images/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/image/images/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/images/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/image/images/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/wordimage/imageUploader.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/images/jxface2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/images/label.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/left_focus.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/listbackground.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/loaderror.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/layer/skin/default/loading-0.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/layer/skin/default/loading-1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/layer/skin/default/loading-2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/localimage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/zh-cn/images/localimage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/lock.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/music.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/zh-cn/images/music.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/neweditor-tab-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/none_focus.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/pagebreak.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/template/images/pre0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/template/images/pre1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/template/images/pre2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/template/images/pre3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/template/images/pre4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/images/progress.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/image/images/progress.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/progress.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/redo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/redoH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/right_focus.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/rotateleftdisable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/rotateleftenable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/rotaterightdisable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/rotaterightenable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/scale.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/scale.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/scaleH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/size.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/sortable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/sparator_v.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/images/success.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/image/images/success.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/success.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/images/success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/background/images/success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/image/images/success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/images/success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/table-cell-align.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/tangram-colorpicker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/images/tface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/toolbar_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/undo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/images/undoH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/unhighlighted.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/images/upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/zh-cn/images/upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/video-js/video-js.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/videologo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/video-js/font/vjs.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/video-js/font/vjs.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/video-js/font/vjs.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/images/wface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/word.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/images/wordpaste.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/images/yface.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/500.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/admin/AdminFeedbackService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/admin/AdminFeedbackServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/admin/AdminMenuService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/admin/AdminMenuServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/message/AdminMessageService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/message/AdminMessageServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/admin/AdminUserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/admin/AdminUserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/aftersale/AfterSaleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/aftersale/AfterSaleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/income/AliIncomeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/income/AliIncomeServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/dubbo/ApiPubSrvServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/dubbo/ApiSrvPayServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/device/ApitDeviceBugServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/equipmonitor/ApitEquipMonitorServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/extend/ApitExtendServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/feedback/ApitFeedbackServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/pwd/ApitGetPwdServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/home/ApitHomeServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/industry/ApitIndustryServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/renew/ApitRenewBaseServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/ApitRenewServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/role/ApitRoleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/address/ApitServiceAddressServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/servicebill/ApitServiceBillServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/income/ApitServiceIncomeServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/shop/ApitSrvAssociationShopServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/auth/ApitSrvAuthServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/information/ApitSrvInformationServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/menu/ApitSrvMenuServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/message/ApitSrvMessageServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/ApitSrvShopServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/user/ApitSrvUserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/dubbo/workorder/ApitWorkOrderServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/srv/AuthController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/interceptor/AuthInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/BaseController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/BaseServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/BaseServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/src/main/java/com/wgb/exception/BusinessException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/util/CacheConstant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/util/CacheConstant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-common-intf/src/main/java/com/wgb/service/CacheDataService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/CacheService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/CacheServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/changepwd/ChangePwdController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/changepwd/ChangePwdService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/changepwd/ChangePwdServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/renew/ChooseShopController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/src/main/java/com/wgb/util/CommonUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/src/main/java/com/wgb/util/Contants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/device/DeviceBugController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/device/DeviceBugService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/device/DeviceBugServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/src/main/java/com/wgb/util/EmojiFilterUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/monitor/EquipMonitorController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/equipmonitor/EquipMonitorService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/equipmonitor/EquipMonitorServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/renew/ExtendController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/renew/ExtendService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/renew/ExtendServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/feedback/FeedbackController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/feedback/FeedbackService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/feedback/FeedbackServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/income/FileController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/income/FileService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/income/FileService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/income/FileServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/income/FileServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/FileUploadService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/getpwd/GetPwdController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/pwd/GetPwdService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/pwd/GetPwdServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/hardware/HardwareDeviceController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/hardware/HardwareDeviceService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/hardware/HardwareDeviceServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/HomeController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/home/HomeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/home/HomeServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/src/main/java/com/wgb/util/HttpClientUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/IndustryController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/IndustryService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/industry/IndustryService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/IndustryServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/industry/IndustryServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/src/main/java/com/wgb/util/JSONUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/LoginController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/mq/MQImportJob.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/mq/MQImportJob.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/mq/MQImportThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/mq/MQImportThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/MQMessageService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/MQMessageService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/mq/MQMessageServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/mq/MQMessageServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_rocketmq_rocketmq_client_3_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_rocketmq_rocketmq_common_3_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_rocketmq_rocketmq_remoting_3_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_2_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_dysmsapi_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_sms_3_0_0_rc1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_oss_aliyun_sdk_oss_2_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_belerweb_pinyin4j_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_27.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_rapid_framework_rapid_core_4_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_1_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_wgb_dubbo_dubbo_intf_2_4_50.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_wgb_snf_dal_3_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_wgb_snf_dal_sharding_1_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_wgb_xiaxi_xiaxi_support_2_0_48.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zl_framework_zlf_common_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zl_framework_zlf_expcetion_2_0_18.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_0_25_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_18.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_logstash_logback_logstash_logback_encoder_4_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_2_6_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_api_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_common_schemas_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_common_utilities_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_bindings_soap_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_bindings_xml_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_core_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_databinding_jaxb_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_frontend_jaxws_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_frontend_simple_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_transports_http_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_ws_addr_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_ws_security_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_tools_common_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_neethi_neethi_2_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_santuario_xmlsec_1_4_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ws_commons_schema_XmlSchema_1_4_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ws_security_wss4j_1_5_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15_1_45.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_19.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jasig_cas_client_cas_client_core_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_1_8_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_asm_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_3_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_8_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wsdl4j_wsdl4j_1_6_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_resolver_xml_resolver_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/freemarker/Menu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/freemarker/service/MenuDataService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/freemarker/service/MenuDataServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/merchantrenewal/MerchantrenewalService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/merchantrenewal/MerchantrenewalServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/MessageController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/factory/OSSClientFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/src/main/java/com/wgb/util/OrderCodeBuilderUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/admin/OssClientService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/workorder/OssClientService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/OssClientServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/workorder/OssClientServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/util/ParamsUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/util/ParamsUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/srv/PubSrvService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/srv/PubSrvServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-common-service/src/main/java/com/wgb/mq/send/RegShopInitSend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/renew/RenewController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/renew/RenewService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/renew/RenewServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/entity/ResponseResultEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/srv/RoleController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/RoleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/RoleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/SeqGenService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/SeqGenServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/address/ServiceAddressController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/address/ServiceAddressService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/address/ServiceAddressServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/servicebill/ServiceBillController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/servicebill/ServiceBillService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/servicebill/ServiceBillServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/income/ServiceIncomeController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/income/ServiceIncomeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/income/ServiceIncomeServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/src/main/java/com/wgb/util/SignUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/shop/SrvAssociationShopController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/srv/SrvAssociationShopService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/srv/SrvAssociationShopService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/srv/SrvAssociationShopServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/srv/SrvAssociationShopServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/srv/SrvAuthService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/srv/SrvAuthServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/shop/SrvBranchRenewController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/srv/SrvInformationController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/srv/SrvMenuService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/srv/SrvMenuServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/SrvMessageService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/SrvMessageServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/srv/SrvPayService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/srv/SrvPayServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/shop/SrvRegShopController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/srv/SrvRenewService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/srv/SrvRenewServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/srv/SrvRoleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/srv/SrvRoleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/srv/SrvService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/srv/SrvServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/shop/SrvShopBranchExpireController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/shop/SrvShopController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/srv/SrvShopService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/srv/SrvShopService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/srv/SrvShopServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/srv/SrvShopServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/srv/SrvUserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/srv/SrvUserRoleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/SrvUserRoleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/srv/SrvUserRoleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/SrvUserRoleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/src/main/java/com/wgb/service/srv/SrvUserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/srv/SrvUserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/java/com/wgb/service/impl/srv/SrvUserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/srv/SrvUserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/src/main/java/com/wgb/util/SystemConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/freemarker/Time.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/src/main/java/com/wgb/util/TrustAllStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/freemarker/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/freemarker/service/UserDataService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/freemarker/service/UserDataServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/UserLoginController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/UserLoginService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/UserLoginServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/srv/UserRoleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/srv/UserRoleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/src/main/java/com/wgb/util/WeixinCommon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/workorder/WorkOrderController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/workorder/WorkOrderService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/workorder/WorkOrderServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/zeroclipboard/ZeroClipboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/ace-ie.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/ace-rtl.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/ace-skins.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/ace.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/already_expire_branch.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/already_expire_branch_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/anchor/anchor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/annotations.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/annotations.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/resources/applicationContext-db-pre.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/resources/applicationContext-db-prod.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/resources/applicationContext-db-sit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/resources/applicationContext-db.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/test/resources/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/association/association_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/association/association_manage_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/association/association_shop.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/attachment.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/attachment.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/attachment/attachment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/auth_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/auth_update.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/background/background.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/background/background.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/background/background.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/base_bas.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/base_common.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/base_css.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/base_error.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/base_js.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/base_main.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/base_page.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/base_sys.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/bootstrap-editable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/bootstrap-timepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/branch_extend_probation.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/merchantrenewal/branch_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/branch_renew.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/branch_table.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/buildCheckTree.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/buildChooseTree.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/buildTree.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/canvas-tools.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/canvas-tools.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/changepwd/changepwd_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/charts/chart.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/charts/charts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/charts/charts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/charts/charts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/check_icon.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/choose-company.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/choose-icon.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/choose-member.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/choose-point.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/choose-user.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/choose_assi_shop.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/choose_banrch.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/merchantrenewal/choose_banrch.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/choose_single_shop.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/choose_wechat_shop.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/choose_work_order.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/singleshop/choosebranchforwechat.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/singleshop/chooseweichatshop.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/chosen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/codemirror.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/codemirror/codemirror.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/codemirror/codemirror.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/colorbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/colorpicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/template/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/themes/dark-blue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/themes/dark-green.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/data.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/daterangepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/default_cfg.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/bug/device_bug.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/bug/device_bug_report.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/dialogbase.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/drilldown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/drilldown.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/dropzone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/resources/dubbo-basic.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/resources/dubbo-consumer.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/resources/dubbo-provider.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/easyui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/echartsHome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/table/edittable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/table/edittable.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/table/edittable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/table/edittd.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/table/edittip.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/emotion.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/emotion.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/emotion/emotion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/en/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/equipmonitor/equip_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/equipmonitor/equip_manage_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/equipmonitor/equipbug_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/equipmonitor/equipbug_page.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/error-ajax.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/error-service.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/error.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/exporting.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/exporting.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/extend_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/extend_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/extend_manage_table.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/feedback/feedback_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/file_list.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/file_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/file_pay.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/fileupload.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/font-awesome-ie7.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/font/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/font/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/font/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/font/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/footer.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/resources/freemarker-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/fullcalendar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/funnel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/funnel.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/getpwd.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/gmap/gmap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/themes/gray.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/themes/grid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/header.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/heatmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/heatmap.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/help/help.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/help/help.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/help/help.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/highcharts-more.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/highcharts-more.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/highcharts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/highcharts.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/home.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/home_sys.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/icon_list.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/iframe.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/image/image.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/image/image.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/image/image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/insertframe/insertframe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/internal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/jboss-deployment-structure.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/jboss-web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/jquery-1.10.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/jquery-1.10.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/jquery-1.10.2.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/js/jquery-2.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/jquery-ui-1.10.3.custom.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/jquery-ui-1.10.3.full.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/js/jquery.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/jquery.gritter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/jumpPage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/layer/skin/layer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/layer/skin/layer.ext.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/layer/extend/layer.ext.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/layer/layer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/left_menu.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/link/link.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/resources/logback.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/map/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/map.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/merchantrenewal/marketing_Assistant.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/merchantrenewal/marketing_Assistant_add.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/menu_list.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/menu_urls.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/merchantrenewal/miniprogram.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/adapters/mootools-adapter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/multiple_shop_renew.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/music/music.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/music/music.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/music/music.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/no-data-to-display.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/order_add.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/order_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/order_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/order_manage_table.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/images/page 1.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/pager.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/income/pay_income.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/merchantrenewal/payassistant.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/paysuccess.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/plupload.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/pluploader.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-common-intf/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-common-service/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/preview/preview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/product_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/product_table.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/adapters/prototype-adapter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/reg/reg_shop.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/reg/reg_shop_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/reg/reg_shop_manage_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/renew_table.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/renew_table_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/js/respond.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/role_add.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/role_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/role_manage_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/role_update.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/rownum.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/scrawl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/scrawl.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/scrawl/scrawl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/searchreplace/searchreplace.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/searchreplace/searchreplace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/select2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/selectbranch.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/selectpaytype.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/selectpaytype.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/servicebill/service_bill_add.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/servicebill/service_bill_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/servicebill/service_bill_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/servicebill/service_bill_payment.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/servicebill/service_bill_table.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/resources/setting-web.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/SyntaxHighlighter/shCore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sharding/sharding.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sharding/sharding.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/shop_extend.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/shop_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/shop_manage_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/shop_manage_detail_branch.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/shop_manage_detail_branch_info.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/shop_order_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/shop_order_pay.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/map/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/workorder/simple_work_order_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/workorder/simple_work_order_table.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/singleshop/single_shop_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/renew/single_shop_renew.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/singleshop/single_shop_table.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/singleshop/singlewechat.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/singleshop/singlewechatassi.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/themes/skies.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/snapscreen/snapscreen.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/spechars/spechars.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/spechars/spechars.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_admin_feedback_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_admin_message_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_aftersale_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_association_shop_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_association_shop_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_auth_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_changepwd_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_feedback_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_mqmessage_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_mqmessage_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-common-service/src/main/resources/sql/sqlMap_pageCount.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-common-service/src/main/resources/sql/sqlMap_pageCountShardName.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_pub_srv_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_pub_srv_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_role_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_service_address.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_srv_menu_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_srv_message_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_srv_order_main_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_srv_pay_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_srv_role_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_srv_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_srv_shop_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_srv_shop_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_srv_user_role.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_srv_user_role_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/src/main/resources/sql/sqlMap_srv_user_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_srv_user_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_user_login.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_user_role_shardname.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/srv/srv_pub_config.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-intf/srvms-admin-intf.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-admin-service/srvms-admin-service.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-common-intf/srvms-common-intf.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-common-service/srvms-common-service.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srvms-pom.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-util/srvms-util.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-intf/srvms-web-intf.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web-service/srvms-web-service.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/srvms-web.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/srvms_admin_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/srvms_admin_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/srvms_web_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/srvms_web_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/adapters/standalone-framework.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/system_message.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/system_message_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/system/system_message_table.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/wordimage/tangram.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/template/template.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/template/template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/template/template.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/top_menu.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/ueditor.all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/ueditor.all.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/ueditor.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/css/ueditor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/ueditor.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/themes/default/css/ueditor.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/ueditor.parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/ueditor.parse.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/assets/css/ui.jqgrid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/uploader.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/srv/user_choose.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/srv/user_list.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/srv/user_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/srv/user_manage_add.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/srv/user_manage_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/srv/user_manage_update.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/userlogin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vars/vars.dev.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vars/vars.pre.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vars/vars.prod.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vars/vars.sit.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/video-js/video-js.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/video-js/video-js.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/video.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/video-js/video.dev.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/video.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/video/video.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/video-js/video.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/video-js/font/vjs.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/webapp/webapp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.flashonly.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.flashonly.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.html5only.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.withoutimage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/merchantrenewal/wechatAssistant.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/merchantrenewal/wechat_renew.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/merchantrenewal/wechatplug.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/merchantrenewal/wechattrenewalController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/will_expire_branch.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/shop/will_expire_branch_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/wordimage/wordimage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/dialogs/wordimage/wordimage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/workorder/work_order_add.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/workorder/work_order_detail.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/workorder/work_order_handle.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/workorder/work_order_manage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/workorder/work_order_price.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/workorder/work_order_table.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/third-party/xss.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/merchantrenewal/xufei_demo.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/ueditor/lang/zh-cn/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/zlf_common_pager.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../srvms-web/src/main/webapp/WEB-INF/ftl/zlf_common_selectbranch.ftl" />
+    <list default="true" id="310a09fb-bf82-47cf-866e-6010c696a0a0" name="Default" comment="第二次测试">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../srvms-web/target/classes/com/wgb/controller/UserLoginController.class" afterPath="$PROJECT_DIR$/../srvms-web/target/classes/com/wgb/controller/UserLoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../srvms-web/target/srvms-web-1.0.0/WEB-INF/classes/com/wgb/controller/UserLoginController.class" afterPath="$PROJECT_DIR$/../srvms-web/target/srvms-web-1.0.0/WEB-INF/classes/com/wgb/controller/UserLoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/UserLoginController.java" afterPath="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/UserLoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="srvms-pom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -934,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="500.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="500.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../srvms-web/src/main/webapp/500.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="120">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -954,24 +109,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserLoginController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserLoginController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/UserLoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="423" max-vertical-offset="880">
-              <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.8219585" vertical-offset="383" max-vertical-offset="900">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SrvAuthService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/srv/SrvAuthService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="480">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1003,9 +148,10 @@
         <option value="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/demo.html" />
         <option value="$PROJECT_DIR$/../srvms-web/src/main/webapp/userlogin.html" />
         <option value="$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/UserLoginService.java" />
-        <option value="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/UserLoginController.java" />
         <option value="$PROJECT_DIR$/../srvms-web-service/src/main/resources/sql/sqlMap_user_login.xml" />
         <option value="$PROJECT_DIR$/../srvms-web-service/src/main/java/com/wgb/service/impl/UserLoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/~$erLoginController.java" />
+        <option value="$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/UserLoginController.java" />
       </list>
     </option>
   </component>
@@ -1068,6 +214,104 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvms-pom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvms-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvms-pom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvms-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvms-pom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvms-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvms-pom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvms-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wgb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvms-pom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srvms-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wgb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -1091,11 +335,140 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="SearchEverywhereHistoryKey" value="queryAuthByRoleId&#9;PSI&#9;JAVA://com.wgb.controller.srv.AuthController#queryAuthByRoleId&#10;login&#9;FILE&#9;file://D:/WorkSpace/srvms/srvms-web/src/main/java/com/wgb/controller/LoginController.java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="81" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="111" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="110" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="904" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="98" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="105" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="105" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="898" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WorkSpace\srvms\srvms-web\src\main\webapp" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/UserLoginController.java</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/~$erLoginController.java</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Tomcat Server.srvms">
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1440,15 +813,15 @@
       <created>1540884330041</created>
       <option name="number" value="Default" />
       <updated>1540884330041</updated>
-      <workItem from="1540884332869" duration="12791000" />
+      <workItem from="1540884332869" duration="14197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12791000" />
+    <option name="totallyTimeSpent" value="14197000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="705" extended-state="1" />
+    <frame x="-8" y="-8" width="1296" height="705" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1463,12 +836,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.489011" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.82051283" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.82051283" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62637365" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21978022" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30987054" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1706,16 +1079,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/UserLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="423" max-vertical-offset="880">
-          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../srvms-web-intf/src/main/java/com/wgb/service/UserLoginService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1080">
@@ -1768,6 +1131,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="337">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../srvms-web/src/main/java/com/wgb/controller/UserLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8219585" vertical-offset="383" max-vertical-offset="900">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
