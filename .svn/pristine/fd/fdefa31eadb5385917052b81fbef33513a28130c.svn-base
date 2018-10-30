@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sharding>
+
+    <!-- 通过商家编码增量区间路由 -->
+    <shardRouter id="shardshopcode">
+        ${shardRouter.shopcode}
+    </shardRouter>
+
+    <!-- 根据指定shard名称路由 -->
+    <shardRouter id="shardname">
+        ${shardRouter.shardname}
+    </shardRouter>
+
+</sharding>

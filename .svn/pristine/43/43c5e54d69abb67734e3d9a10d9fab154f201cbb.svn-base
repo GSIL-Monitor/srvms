@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.SrvServiceImpl" jdbcTimeout="5">
+
+    <sql id="querySrvPageList">
+        <![CDATA[
+        SELECT
+            a.servercode,
+            a.servername,
+            a.regservercode,
+            a.provinceid,
+            a.cityid,
+            a.districtid,
+            a.area,
+            a.email,
+            a.tel,
+            a.zipcode,
+            a.contact,
+            a.contactaddress,
+            a.createtime,
+            a.createuser,
+            a.aftersales,
+            a.aftersalesname
+            FROM
+        pub_srv a
+        where 1=1
+        <#if keyword?? && keyword != ''>
+				and	(a.servername like '%' :keyword '%' or a.servercode=:keyword or a.tel like '%' :keyword '%')
+		</#if>
+		order by a.servercode
+           	]]>
+    </sql>'
+
+    <sql id="updateFlag">
+        <![CDATA[
+    update pub_srv set flag=:flag where servercode=:servercode
+           	]]>
+    </sql>
+
+    <sql id="addRegSrv">
+        <![CDATA[
+		  INSERT INTO
+		  pub_srv(
+				servername,
+				provinceid,
+				cityid,
+				districtid,
+				area,
+				email,
+				tel,
+				zipcode,
+				contact,
+				contactaddress,
+				createtime,
+				createuser,
+				aftersales,
+				aftersalesname,
+				flag,
+				bankcard,
+				bankcardname,
+				bankcardno,
+				subordinatebranch,
+				obligatetel,
+				alirevenuescale,
+				weixirevenuescale,
+				regservercode,
+				appdiscountratio
+			       )
+			VALUES
+				(
+					:servername,
+				<#if provinceid?? && provinceid != ''>
+				    :provinceid,
+				<#else>
+				    null,
+			    </#if>
+			    <#if cityid?? && cityid != ''>
+				    :cityid,
+				<#else>
+				    null,
+			    </#if>
+			    <#if districtid?? && districtid != ''>
+				    :districtid,
+				<#else>
+				    null,
+			    </#if>
+			    <#if area?? && area != ''>
+				    :area,
+				<#else>
+				    null,
+			    </#if>
+			    <#if email?? && email != ''>
+				    :email,
+				<#else>
+				    null,
+			    </#if>
+			    <#if tel?? && tel != ''>
+				    :tel,
+				<#else>
+				    null,
+			    </#if>
+			    <#if zipcode?? && zipcode != ''>
+				    :zipcode,
+				<#else>
+				    null,
+			    </#if>
+			    <#if contact?? && contact != ''>
+				    :contact,
+				<#else>
+				    null,
+			    </#if>
+			    <#if contactaddress?? && contactaddress != ''>
+				    :contactaddress,
+				<#else>
+				    null,
+			    </#if>
+			      now(),
+			      :loginuserid,
+			     <#if aftersales?? && aftersales != ''>
+				    :aftersales,
+				<#else>
+				    null,
+			    </#if>
+			    <#if aftersalesname?? && aftersalesname != ''>
+				    :aftersalesname,
+				<#else>
+				    null,
+			    </#if>
+			    :flag,
+			    :bankcard,
+			    :bankcardname,
+			    :bankcardno,
+			    :subordinatebranch,
+			    :obligatetel,
+			    :alirevenuescale,
+			    :weixirevenuescale,
+			     <#if regservercode?? && regservercode != ''>
+				      :regservercode,
+				    <#else>
+				      null,
+			         </#if>
+			     :appdiscountratio
+				)
+    	]]>
+    </sql>
+
+    <sql id="queryServer">
+        SELECT a.shopcode , b.servercode,b.servername,b.aftersales,b.aftersalesname,c.phone
+        FROM
+        srv_shop a,
+        pub_srv b,
+        srv_aftersaler c
+        WHERE a.shopcode=:shopcode
+        AND a.servercode=b.servercode
+        AND b.aftersales=c.userid
+    </sql>
+
+    <sql id="getSrvTel">
+        SELECT tel
+        FROM
+        pub_srv
+        WHERE servercode=:servercode
+    </sql>
+
+    <sql id="querySrvDetails">
+        select
+            servername,
+            servercode,
+            provinceid,
+            cityid,
+            districtid,
+            area,
+            email,
+            tel,
+            zipcode,
+            contact,
+            contactaddress,
+            createtime,
+            createuser,
+            aftersales,
+            aftersalesname,
+            flag,
+            bankcard,
+            bankcardname,
+            bankcardno,
+            subordinatebranch,
+            obligatetel,
+            alirevenuescale,
+            weixirevenuescale,
+            appdiscountratio
+        from
+        pub_srv
+        where servercode=:servercode
+    </sql>
+
+    <sql id="updateSrv">
+        <![CDATA[
+        UPDATE
+                pub_srv
+        SET
+        servername = :servername,
+        provinceid = :provinceid,
+        cityid = :cityid,
+        <#if districtid?? && districtid!=''>
+        districtid = :districtid,
+        <#else>
+        districtid = null,
+         </#if>
+        area = :area,
+        tel = :tel,
+        flag = :flag,
+        contact = :contact,
+        aftersales = :aftersales,
+        bankcard = :bankcard,
+        bankcardname = :bankcardname,
+        bankcardno = :bankcardno,
+        subordinatebranch = :subordinatebranch,
+        obligatetel = :obligatetel,
+        alirevenuescale = :alirevenuescale,
+        weixirevenuescale = :weixirevenuescale,
+        updatetime = NOW(),
+        updateuser = :loginuserid,
+        aftersales = :aftersales,
+        aftersalesname = :aftersalesname,
+        appdiscountratio = :appdiscountratio
+        WHERE servercode = :servercode
+        	]]>
+    </sql>
+
+    <sql id="queryServerByServerCode">
+        <![CDATA[
+        select
+            servername
+        from
+             pub_srv
+        where servercode = :servercode
+        ]]>
+    </sql>
+
+    <sql id="getSrvInfo">
+        <![CDATA[
+        select
+            servername,
+            servercode,
+            aftersalesname,
+            aftersales
+        from
+             pub_srv
+        where servercode = :servercode
+        ]]>
+    </sql>
+
+    <sql id="getServerInfo">
+        <![CDATA[
+            select
+                b.servername,
+                b.servercode,
+                a.shopcode
+            from
+                 srv_shop a
+            inner join
+                 pub_srv b
+            on b.servercode = a.servercode
+            where 1 = 1
+            <#if  shopcodes??>
+                and  a.shopcode in (:shopcodes)
+            </#if>
+            group by b.servercode
+        ]]>
+    </sql>
+
+</sqlMap>

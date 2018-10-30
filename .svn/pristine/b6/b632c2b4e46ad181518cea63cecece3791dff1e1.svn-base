@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.SrvPayServiceImpl" jdbcTimeout="5">
+        <sql id="savePayInfoCallback">
+            <![CDATA[
+                update
+                    srv_order_main set
+                    updatetime=now()
+                    <#if paystatus?? & paystatus != ''>
+                        ,paystatus = :paystatus
+                    </#if>
+                    <#if paymenttime?? & paymenttime != ''>
+                        ,paymenttime = :paymenttime
+                    </#if>
+                    <#if payamount?? & payamount != ''>
+                        ,payamount = :payamount
+                        <#else>
+                         ,payamount = 0
+                    </#if>
+                     <#if payfunction?? & payfunction != ''>
+                       , payfunction = :payfunction
+                    </#if>
+                where id = :orderid
+                    <#if shopcode?? && shopcode != ''>
+                           and shopcode = :shopcode
+                    </#if>
+            ]]>
+        </sql>
+</sqlMap>

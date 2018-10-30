@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.feedback.FeedbackServiceImpl" jdbcTimeout="5">
+  
+  <sql id="insertObject">
+  <![CDATA[
+    insert into pub_feedback (
+        title,
+        detail,
+        committime,
+        servercode,
+        submitter,
+        createtime,
+        createuser
+    )
+    values (
+        <#if title??&&title!=''>
+            :title,
+            <#else>
+                null,
+        </#if>
+        <#if detail??&&detail!=''>
+            :detail,
+            <#else>
+                null,
+        </#if>
+        now(),
+        :servercode,
+        :loginuserfullname,
+        now(),
+        :loginuserid
+	)
+	]]>
+  </sql>
+
+</sqlMap>

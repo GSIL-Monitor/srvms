@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.SrvShopServiceImpl" jdbcTimeout="5">
+
+    <sql id="queryShopPage">
+        <![CDATA[
+		    select
+		        id,
+		        servercode,
+		        followlabel,
+		        followremark,
+		        shopcode,
+		        createtime,
+		        createuser,
+		        updatetime,
+		        updateuser,
+		        issrvreg
+		     from srv_shop where servercode = :servercode
+    	]]>
+    </sql>
+
+    <sql id="getShopFollowInfo">
+        <![CDATA[
+		    select id,followlabel,followremark from srv_shop where shopcode=:shopcode and servercode=:servercode
+		     <#if id?? && id != ''>
+	          and id = :id
+	        </#if>
+    	]]>
+    </sql>
+
+
+    <sql id="getShopFollowInfoByFormTable">
+        <![CDATA[
+		      select
+                  id,
+                  followlabel,
+                  if(char_length(followremark) > 15 ,concat(
+                    substring(followremark, 1, 15),
+                    '...'
+                  ) , followremark) as followremark,
+                  followremark as followremarkdetail
+              from
+                  srv_shop
+		      where
+		        shopcode=:shopcode
+		        and servercode=:servercode
+		        <#if id?? && id != ''>
+	                and id = :id
+	            </#if>
+    	]]>
+    </sql>
+
+    <sql id="getChainGrowthRate">
+        <![CDATA[
+		    select count(1) from srv_shop  where servercode=:servercode
+    	]]>
+    </sql>
+
+    <sql id="getChainGrowthRateThisWeek">
+        <![CDATA[
+		    select count(1) from srv_shop  where servercode=:servercode and yearweek(date_format(createtime,'%y-%m-%d')) = yearweek(now())
+    	]]>
+    </sql>
+
+    <sql id="getChainGrowthRateThisMonth">
+        <![CDATA[
+		select count(1) from srv_shop where servercode=:servercode and date_format( createtime, '%y%m' ) = date_format( curdate( ) , '%y%m' )
+    	]]>
+    </sql>
+    <!-- 优化sql-->
+    <sql id="getShopCountData">
+        <![CDATA[
+		    select
+                (select count(1) from srv_shop where servercode=:servercode) as sumshop,
+                (select count(1) from srv_shop where servercode=:servercode and issrvreg=1) as srvregshop,
+                (select count(1) from srv_shop where servercode=:servercode and issrvreg=0) as associationshop,
+                (select count(1) from srv_shop where servercode=:servercode
+                 <#if starttime?? && starttime != ''>
+                          and m.createtime >= timestamp(:starttime)
+                  </#if>
+                  <#if endtime?? && endtime != ''>
+                          and m.createtime <= timestamp(:endtime)
+                  </#if>) as newsshop
+                from srv_shop where servercode=:servercode
+                group by :servercode
+    	]]>
+    </sql>
+
+    <sql id="updateShopfollow">
+        <![CDATA[
+		    update srv_shop set
+		    updatetime = now(),updateuser = :loginuserid
+            <#if followlabel?? && followlabel != ''>
+		        ,followlabel=:followlabel
+		    </#if>
+		    <#if followremark?? && followremark != ''>
+		        ,followremark=:followremark
+		         <#else>
+		        ,followremark=null
+		    </#if>
+		   where  servercode=:servercode and shopcode=:shopcode and id=:id
+    	]]>
+    </sql>
+
+    <sql id="getSrvShopInfo">
+        <![CDATA[
+		  select  servercode,
+                  servername,
+                  provinceid,
+                  cityid,
+                  districtid,
+                  area,
+                  email,
+                  tel,
+                  zipcode,
+                  contact,
+                  contactaddress,
+                  createtime,
+                  updatetime,
+                  createuser,
+                  updateuser,
+                  flag,
+                  aftersales,
+                  aftersalesname
+          from pub_srv where servercode=:servercode
+    	]]>
+    </sql>
+
+    <sql id="getSrvShopList">
+        <![CDATA[
+		  select  shopcode
+          from srv_shop where servercode=:servercode
+    	]]>
+    </sql>
+
+    <sql id="addSrvShop">
+        <![CDATA[
+    	    INSERT INTO srv_shop
+			(
+				servercode,
+				shopcode,
+				createtime,
+				createuser,
+				issrvreg
+			)
+			VALUES
+			(
+				:servercode,
+				:shopcode,
+				now(),
+				:loginuserid,
+               <#if issrvreg?? && issrvreg != ''>
+				:issrvreg
+				<#else>
+				0
+			</#if>
+			)
+    	]]>
+    </sql>
+
+    <sql id = "queryShopCodeByServiceCode">
+        SELECT
+            shopCode
+        FROM srv_shop
+        WHERE
+            servercode = :servercode
+    </sql>
+
+    <sql id="insertServerShop">
+        <![CDATA[
+    	    INSERT INTO srv_shop
+			(
+				servercode,
+				shopcode,
+				createtime,
+				createuser,
+				issrvreg
+			)
+			VALUES
+			(
+				:servercode,
+				:shopcode,
+				now(),
+				 0,
+                 1
+			)
+    	]]>
+    </sql>
+
+
+
+
+</sqlMap>

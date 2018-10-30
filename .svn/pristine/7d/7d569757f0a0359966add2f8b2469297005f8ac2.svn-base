@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.SrvUserServiceImpl" jdbcTimeout="5">
+
+    <sql id="queryUserPage">
+        <![CDATA[
+		    select a.id,
+		    a.username,
+		    a.fullname,
+		    a.flag,
+		    date_format(a.createtime, '%Y-%m-%d %H:%i:%s') as createtime,
+		    (select group_concat(c.rolename) from srv_user_role b inner join srv_role c on b.roleid = c.id where b.userid = a.id and c.servercode = :servercode) as rolenames
+			from srv_user a
+			where a.servercode = :servercode and a.del = 0
+		    <#if keyword?? && keyword != ''>
+				and	(a.username like '%' :keyword '%' or a.fullname like  '%' :keyword '%')
+		    </#if>
+            order by username
+    	]]>
+    </sql>
+
+    <sql id="getUserInfo">
+        <![CDATA[
+        select
+            a.id,
+            a.account,
+            a.username,
+            a.tel,
+            a.email,
+            a.fixtel,
+            a.fullname,
+            a.flag,
+            a.required,
+		    (select group_concat(c.id) from srv_user_role b inner join srv_role c on b.roleid = c.id where b.userid = a.id and c.servercode = :servercode) as roleids
+			from srv_user a
+			 where a.servercode = :servercode and a.del=0
+			 <#if id?? && id != ''>
+			 	and a.id = :id
+			 </#if>
+			 <#if username?? && username != ''>
+			 	and a.username = :username
+			 </#if>
+    	]]>
+    </sql>
+
+    <sql id="getLoginUser">
+        <![CDATA[
+		    select
+		           a.id,
+		           a.account,
+		     	   a.servercode,
+		     	   a.fullname,
+		     	   a.flag,
+		     	   b.servername,
+		     	   a.required
+		    from srv_user a left join pub_srv b on a.servercode = b.servercode
+		    where 1=1 and del=0
+		    <#if account?? && account != ''>
+			AND	a.account = :account
+			</#if>
+			<#if password?? && password != ''>
+			AND	a.password = :password
+			</#if>
+		    <#if servercode?? && servercode != ''>
+			AND	a.servercode = :servercode
+			</#if>
+			<#if username?? && username != ''>
+			AND	a.username = :username
+			</#if>
+        ]]>
+    </sql>
+
+    <sql id="getUserData">
+        <![CDATA[
+            SELECT
+                id,
+                account,
+                password,
+                username,
+                servercode,
+                tel,
+                email,
+                fixtel,
+                createtime,
+                createuser,
+                updatetime,
+                updateuser,
+                lastlogintime,
+                del,
+                fullname,
+                required,
+                flag
+            FROM
+                srv_user
+            WHERE id=:id
+
+        ]]>
+    </sql>
+
+    <sql id="checkAccount">
+        <![CDATA[
+		    select count(1) from srv_user where account = :account and del = 0
+    	]]>
+    </sql>
+
+    <sql id="updatePassword">
+        <![CDATA[
+		    update srv_user set password = :password where account = :account and del = 0
+    	]]>
+    </sql>
+
+    <sql id="delUser">
+        <![CDATA[
+		    update srv_user set del = 1 where id = :id and del=0
+    	]]>
+    </sql>
+
+    <sql id="insertUser">
+        <![CDATA[
+		    INSERT INTO srv_user(account,username, fixtel,email, tel, password,fullname,flag,createtime,createuser,servercode)
+			VALUES(
+			<#if account?? && account != ''>
+				:account,
+				<#else>
+				null,
+			</#if>
+			<#if username?? && username != ''>
+				:username,
+				<#else>
+				null,
+			</#if>
+			<#if fixtel?? && fixtel != ''>
+				:fixtel,
+				<#else>
+				null,
+			</#if>
+			<#if email?? && email != ''>
+				:email,
+				<#else>
+				null,
+			</#if>
+			<#if tel?? && tel != ''>
+				:tel,
+				<#else>
+				null,
+			</#if>
+			<#if password?? && password != ''>
+				:password,
+				<#else>
+				null,
+			</#if>
+			<#if fullname?? && fullname != ''>
+				:fullname,
+				<#else>
+				null,
+			</#if>
+			:flag,
+			now(),
+			:loginuserid,
+			:servercode
+			)
+    	]]>
+    </sql>
+
+    <sql id="updateUser">
+        <![CDATA[
+		    update srv_user
+		    set updatetime = now()
+		    	,updateuser = :loginuserid
+		    <#if account??>
+		    	,account = :account
+		    </#if>
+		    <#if username??>
+		    	,username = :username
+		    </#if>
+		    <#if email??>
+		    	,email = :email
+		    </#if>
+		     <#if fixtel??>
+		    	,fixtel = :fixtel
+		    </#if>
+		    <#if tel??>
+		    	,tel = :tel
+		    </#if>
+		    <#if password?? && password != ''>
+		    	,password = :password
+		    </#if>
+		    <#if fullname??>
+		    	,fullname = :fullname
+		    </#if>
+		    <#if flag??>
+				,flag = :flag
+            </#if>
+		    where id = :id and servercode = :servercode and del = 0
+    	]]>
+    </sql>
+
+    <sql id="checkUserName">
+        <![CDATA[
+		SELECT u.username  FROM srv_user  u
+		    WHERE  u.username  = :username
+		           and u.servercode = :servercode
+                   and u.del=0
+			       <#if id?? && id !=''>
+			         and id != :id
+			       </#if>
+    	]]>
+    </sql>
+
+    <sql id="resetUserPassword">
+        <![CDATA[
+		    update srv_user set password = :password where id = :id and del = 0
+    	]]>
+    </sql>
+
+    <sql id="queryServerDiscount">
+    <![CDATA[
+            select appdiscountratio from pub_srv where servercode = :servercode
+    	]]>
+    </sql>
+
+    <sql id="updatePasswordForUser">
+        <![CDATA[
+             update srv_user set password = :password where servercode = :servercode and account = :account
+    	]]>
+    </sql>
+
+    <sql id="checkPasswordAndAccount">
+        <![CDATA[
+             select count(1) from srv_user where account = :account and servercode = :servercode and password = :password;
+    	]]>
+    </sql>
+</sqlMap>

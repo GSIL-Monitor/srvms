@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 系统数据统计定时任务 -->
+    <bean id="systemDataCountJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail">
+            <bean class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+                <property name="targetObject" ref="systemDataCountJob"/>
+                <property name="targetMethod" value="start"/>
+            </bean>
+        </property>
+        <!-- 每天夜里12点整执行 -->
+        <property name="cronExpression" value="0 0 12 * * ?"/>
+    </bean>
+
+    <!-- 商户数据统计定时任务 -->
+    <bean id="shopDataCountJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail">
+            <bean class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+                <property name="targetObject" ref="shopDataCountJob"/>
+                <property name="targetMethod" value="start"/>
+            </bean>
+        </property>
+        <!-- 每天夜里12点10分执行 -->
+        <property name="cronExpression" value="0 10 12 * * ?"/>
+    </bean>
+
+    <!-- 设置调度 -->
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="systemDataCountJobTrigger"/>
+                <ref bean="shopDataCountJobTrigger"/>
+            </list>
+        </property>
+        <property name="taskExecutor">
+            <bean class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+                <property name="corePoolSize" value="10"/>
+                <property name="maxPoolSize" value="100"/>
+                <property name="queueCapacity" value="500"/>
+            </bean>
+        </property>
+    </bean>
+</beans>

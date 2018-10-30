@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.RoleServiceImpl" jdbcTimeout="5">
+
+    <sql id="queryRoleList">
+        <![CDATA[
+		    select
+		        distinct
+		        id,
+                servercode,
+                rolecode,
+                rolename,
+                del,
+                remark,
+                cangrant,
+                menus,
+                createuser,
+                createtime,
+                updateuser,
+                updatetime,
+                `describe`
+		     from srv_role where servercode = :servercode and del= 0
+		    <#if keyword?? && keyword != ''>
+                  and	(rolecode like '%' :keyword '%' or rolename like '%' :keyword '%')
+            </#if>
+		     <#if cangrant?? && cangrant != ''>
+		        and cangrant = :cangrant
+		     </#if>
+		     <#if roleid?? && roleid != ''>
+		        and id = :roleid
+		     </#if>
+		     order by createtime
+    	]]>
+    </sql>
+
+    <sql id="queryRoleNameForUpdate">
+        <![CDATA[
+		    select
+		        id as roleid,
+                rolecode,
+                rolename,
+                `describe`
+		     from srv_role where servercode = :servercode and del= 0 and id = :roleid
+    	]]>
+    </sql>
+
+    <sql id="insertRole">
+        <![CDATA[
+		    insert into srv_role(rolename,rolecode,createuser,createtime,servercode,del,cangrant,`describe`)
+			values(
+			<#if rolename?? && rolename != ''>
+				:rolename,
+				<#else>
+				null,
+			</#if>
+			<#if rolecode?? && rolecode != ''>
+				:rolecode,
+				<#else>
+				null,
+			</#if>
+			:loginuserid,
+			now(),
+			<#if servercode?? && servercode != ''>
+				:servercode,
+				<#else>
+				null,
+			</#if>
+			<#if del?? && del != ''>
+				:del,
+				<#else>
+				null,
+			</#if>
+			<#if cangrant?? && cangrant != ''>
+				:cangrant,
+				<#else>
+				null,
+			</#if>
+			<#if describe?? && describe != ''>
+				:describe
+				<#else>
+				null
+			</#if>
+			)
+    	]]>
+    </sql>
+
+    <sql id="updateRole">
+        <![CDATA[
+		    update srv_role set updatetime = now()
+		        ,updateuser = :loginuserid
+		        <#if rolename?? && rolename != ''>
+		            ,rolename = :rolename
+		        </#if>
+		         ,menus = :menus
+		        where id = :roleid and servercode = :servercode and del= 0
+    	]]>
+    </sql>
+
+    <sql id="updateRoleName">
+        <![CDATA[
+		    update srv_role set updatetime = now()
+		        ,updateuser = :loginuserid
+		        <#if rolename?? && rolename != ''>
+		            ,rolename = :rolename
+		        </#if>
+		         <#if describe?? && describe != ''>
+		            ,`describe` = :describe
+		        </#if>
+		        where id = :roleid and servercode = :servercode and del= 0
+    	]]>
+    </sql>
+
+
+    <sql id="generateShopUniqueBusinessCode">
+        <![CDATA[
+		    select count(1) from srv_role where servercode = :servercode
+    	]]>
+    </sql>
+
+    <sql id="getRoleIsusedNum">
+        <![CDATA[
+		   select count(1) from  srv_user_role WHERE roleid=:id and del=0
+    	]]>
+    </sql>
+
+    <sql id="generateBranchUniqueBusinessCode">
+        <![CDATA[
+		    select count(1) from srv_role where servercode = :servercode
+    	]]>
+    </sql>
+
+    <sql id="getRoleCount">
+        <![CDATA[
+		    select count(1) from srv_role where servercode = :servercode and del= 0
+            <#if rolename?? && rolename != ''>
+            and rolename = :rolename
+            </#if>
+            <#if roleid?? && roleid != ''>
+                    and id != :roleid
+             </#if>
+        ]]>
+        </sql>
+
+    <sql id="delRole">
+        <![CDATA[
+           update srv_role set updatetime = now(), updateuser = :loginuserid , del = 1
+           where servercode = :servercode and del= 0 and id = :id
+   	]]>
+    </sql>
+
+</sqlMap>

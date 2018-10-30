@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cxf="http://cxf.apache.org/core"
+       xmlns:ss="http://www.springframework.org/schema/security"
+       xmlns:jaxws="http://cxf.apache.org/jaxws" xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jms="http://www.springframework.org/schema/jms"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+   	http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+   	http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+   	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+   	http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd
+   	http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+   	http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+   	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+   	http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms.xsd
+   	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--&lt;!&ndash; 资源文件 &ndash;&gt;
+    <context:property-placeholder location="classpath:/setting-web.properties"/>
+
+    <context:component-scan base-package="com.wgb"/>
+
+    <import resource="classpath*:applicationContext-db.xml"/>
+
+    <bean id="serviceBeanPostProcessor" class="com.wgb.rocketmq.ServiceBeanPostProcessor">
+    </bean>
+
+    &lt;!&ndash; MQ导入接口报文处理线程池 &ndash;&gt;
+    <bean id="mqTaskExecutor"
+          class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <property name="corePoolSize" value="30"/>
+        &lt;!&ndash; 线程池维持处于Keep-alive状态的线程数量。如果设置了allowCoreThreadTimeOut为true，该值可能为0。 并发线程数,想达到真正的并发效果,最好对应CPU的线程数及核心数 &ndash;&gt;
+        <property name="maxPoolSize" value="60"/>
+        &lt;!&ndash; 最大线程池容量 &ndash;&gt;
+        <property name="queueCapacity" value="5000"/>
+        &lt;!&ndash; 超过最大线程池容量后,允许的线程队列数 &ndash;&gt;
+        <property name="keepAliveSeconds" value="5000"/>
+        &lt;!&ndash; 线程池维护线程所允许的空闲时间
+                    .单位毫秒，默认为60s，超过这个时间后会将大于corePoolSize的线程关闭，保持corePoolSize的个数 &ndash;&gt;
+        <property name="allowCoreThreadTimeOut" value="true"/>
+        &lt;!&ndash; 允许核心线程超时:
+                    false（默认值）不允许超时，哪怕空闲；true则使用keepAliveSeconds来控制等待超时时间，最终corePoolSize的个数可能为0 &ndash;&gt;
+        <property name="rejectedExecutionHandler">
+            <bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy"/>
+            &lt;!&ndash;
+                            线程池对拒绝任务(无线程可用)的处理策略 &ndash;&gt;
+        </property>
+    </bean>-->
+</beans>

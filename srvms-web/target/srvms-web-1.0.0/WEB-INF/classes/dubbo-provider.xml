@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:provider timeout="5000" filter="dubboContextFilter" />
+
+    <!-- 自动查找可用的端口号 -->
+    <bean id="dynamicDubboPortReaderDao" class="com.wgb.dubbo.DynamicDubboPortReaderImpl"
+          init-method="init"/>
+
+    <!--接口监控 -->
+    <dubbo:monitor protocol="registry"/>
+
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <dubbo:protocol name="dubbo" threadpool="fixed" threads="200" accepts="1000"  />
+
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitSrvShopService" ref="apitSrvShopServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitRenewService" ref="apitRenewServiceImpl"  retries="0"  timeout="5000"/>
+
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitSrvAuthService" ref="apitSrvAuthServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitDeviceBugService" ref="apitDeviceBugServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitEquipMonitorService" ref="apitEquipMonitorServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitFeedbackService" ref="apitFeedbackServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitHomeService" ref="apitHomeServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitServiceIncomeService" ref="apitServiceIncomeServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitIndustryService" ref="apitIndustryServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitSrvInformationService" ref="apitSrvInformationServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitSrvMessageService" ref="apitSrvMessageServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitGetPwdService" ref="apitGetPwdServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitRoleService" ref="apitRoleServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitServiceBillService" ref="apitServiceBillServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitSrvAssociationShopService" ref="apitSrvAssociationShopServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitSrvUserService" ref="apitSrvUserServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitServiceAddressService" ref="apitServiceAddressServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitExtendService" ref="apitExtendServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitSrvMenuService" ref="apitSrvMenuServiceImpl"  retries="0"  timeout="5000"/>
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.web.ApitWorkOrderService" ref="apitWorkOrderServiceImpl"  retries="0"  timeout="5000"/>
+</beans>

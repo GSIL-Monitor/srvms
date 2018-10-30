@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns:style="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            苏州中仑-找回密码
+        </title>
+        <link href="https://041001.zhonglunnet.com/srvms/css/login.css" rel="stylesheet" type="text/css"/>
+        <script src="https://041001.zhonglunnet.com/srvms/js/jquery-2.1.1.min.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="login_head">
+            <img class="login_logo" src="https://041001.zhonglunnet.com/srvms/images/logo.png"/>
+            <div class="login_mbt">
+            </div>
+            <p style="float:right;display: inline;margin-top: 21px;margin-right: 958px;color: #666666;font-size: 14px;">
+                服务商平台
+            </p>
+        </div>
+        <div class="bgc">
+            <div class="login_middle">
+                <div class="index-Container">
+                    <div class="page">
+                        <img src="https://041001.zhonglunnet.com/srvms/images/page 1.svg"/>
+                    </div>
+                    <div class="login-box">
+                        <div class="loginTab forgotpwd">
+                            <ul>
+                                <li class="cur" role="step1">
+                                    <a href="javascript:;">
+                                        1.验证账号
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        2.重置密码
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="loginForm">
+                            <div class="loginCon tabCon" style="display: block;">
+                                <div class="formLine">
+                                    <label class="">
+                                        手机号
+                                    </label>
+                                    <div class="formInput">
+                                        <input maxlength="11" class="input-txt" type="text" id="account"/>
+                                    </div>
+                                </div>
+                                <div class="formLine pr">
+                                    <label>
+                                        验证码
+                                    </label>
+                                    <div class="formInput">
+                                        <input maxlength="6" class="input-txt" type="text" id="verifycode"/>
+                                    </div>
+                                    <span click-able="true" class="sendSMSCode">发送验证码</span>
+                                </div>
+                                <p class="errorMag" id="accountMag" style="display:none;">
+                                </p>
+                                <div class="login_entry" onclick="checkForm()">
+                                    下一步
+                                </div>
+                            </div>
+                            <div class="registerCon tabCon">
+                                <div class="formLine">
+                                    <label>
+                                        新密码
+                                    </label>
+                                    <div class="formInput">
+                                        <input class="input-txt" type="password" id="newpwd"/>
+                                    </div>
+                                </div>
+                                <div class="formLine">
+                                    <label class="">
+                                        重复密码
+                                    </label>
+                                    <div class="formInput">
+                                        <input class="input-txt" type="password" id="newpwd2"/>
+                                    </div>
+                                </div>
+                                <p class="errorMag" id="usernameMag" style="display:none;">
+                                </p>
+                                <div class="login_entry" onclick="checkForm()">
+                                    确定
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="record_number">
+                    ©2017 Zhonglun Co., Ltd. All rights reserved. 苏ICP备 17009137号
+                </p>
+            </div>
+        </div>
+        <script>
+            var ctxPath = location.protocol +"//" + location.host;
+            $(function () {
+                /*$(".loginTab li").click(function () {
+                    var index = $(this).index();
+                    $(".loginTab li").removeClass('cur').eq(index).addClass('cur');
+                    $(".tabCon").hide().eq(index).show();
+                    $('.errorMag').hide();
+                    $('#password2').val("");
+                    $('#password1').val("");
+                })*/
+        
+                $(".input-txt").focus(function () {
+                    $(this).parent().prev().addClass("focusC");
+                }).blur(function () {
+                    var current_txt = $(this).val();
+                    if (!current_txt) {
+                        $(this).parent().prev().removeClass("focusC");
+                    }
+                })
+        
+            })
+
+            //发送短信验证码
+            $('.sendSMSCode').click(function(){
+                $('.errorMag').hide();
+                var account = $.trim($('#account').val());
+                if (account == '') {
+                    showError('请输入11位手机号', $('#account'));
+                    return false;
+                }
+                if (account.length != 11) {
+                    showError('请输入11位手机号', $('#account'));
+                    return false;
+                }
+
+                var clickable = $(this).attr('click-able');
+                $(this).attr('click-able', "false");
+                if(clickable === 'true'){
+                    sendYzm(clickable);
+                }
+            })
+
+            // 发送验证码
+            var smstime = 60;
+            var handlesms;
+
+            function intervalSendSMS() {
+                --smstime;
+                if (smstime <= 0) {
+                    clearInterval(handlesms);
+                    $('.sendSMSCode').html('发送验证码').removeAttr('style');
+                    $('.sendSMSCode').attr("click-able", 'true');
+                    smstime = 60;
+                } else {
+                    var showtime = smstime < 10 ? '0' + smstime : smstime
+                    $('.sendSMSCode').html(showtime + '秒后重发').css({
+                        'backgroundColor': '#999',
+                        'cursor': 'not-allowed'
+                    });
+                }
+            }
+
+            function sendYzm(clickable) {
+                var account = $.trim($('#account').val());
+                if (account == '') {
+                    showError('请输入11位手机号', $('#account'));
+                    return false;
+                }
+                if (account.length != 11) {
+                    showError('请输入11位手机号', $('#account'));
+                    return false;
+                }
+
+                var url =ctxPath  + '/srvms-web/getpwd/entry/sendYzm.action';
+                var params = {
+                    account: account
+                };
+
+                function successCallback(result) {
+                    if (result && result != '') {
+                        showError(result, $('#account'));
+                        $('.sendSMSCode').attr("click-able", 'true');
+                        return false;
+                    } else {
+                        if (smstime == 60 && clickable === 'true') {
+                            $('.errorMag').hide();
+                            handlesms = setInterval(intervalSendSMS, 1000);
+                        }
+                        return true;
+                    }
+                }
+
+                ajaxRequest(url, params, successCallback);
+
+                //return true;
+            }
+
+            function checkForm() {
+                var loginType = $('.loginTab ul li.cur').attr('role');
+                var account = $.trim($('#account').val());
+                var verifycode = $.trim($('#verifycode').val());
+                //第一步
+                if (loginType == 'step1') {
+                    if (account == '') {
+                        showError('请输入11位手机号', $('#account'));
+                        return false;
+                    }
+                    if (account.length != 11) {
+                        showError('请输入11位手机号', $('#account'));
+                        return false;
+                    }
+                    if (verifycode == '') {
+                        showError('请输入验证码', $('#verifycode'));
+                        return false;
+                    }
+                    //验证 验证码
+                    function successCallback(result) {
+                        if (result && result != '') {
+                            showError(result);
+                            return false;
+                        } else {
+                            $(".loginTab li").removeClass('cur').eq(1).addClass('cur');
+                            $(".tabCon").hide().eq(1).show();
+                            return true;
+                        }
+                    }
+                    
+                    //验证 验证码
+                    var url = ctxPath + '/srvms-web/getpwd/entry/checkYzm.action';
+                    var params = {
+                        "account": account,
+                        "yzm": verifycode
+                    };
+                    ajaxRequest(url, params, successCallback);
+
+                    /*$(".loginTab li").removeClass('cur').eq(1).addClass('cur');
+                    $(".tabCon").hide().eq(1).show();*/
+                } else {
+                    var newpwd = $.trim($('#newpwd').val());
+                    var newpwd2 = $.trim($('#newpwd2').val());
+                    if (!/^(\S){6,20}$/.test(newpwd)) {
+                        showError('密码必须为6-20位数字、字符、符号', $('#newpwd'));
+                        return false;
+                    }
+                    if(newpwd !== newpwd2) {
+                        showError('两次输入的密码不一致', $('#newpwd2'));
+                        return false;
+                    }
+
+                    function successCallback(result) {
+                        if (result && result != '') {
+                            showError(result);
+                            return false;
+                        } else {
+                            location.href="index.action";
+                            return true;
+                        }
+                    }
+                    
+                    //重置密码
+                    var url = ctxPath + '/srvms-web/getpwd/entry/updatePassword.action';
+
+                    var params = {
+                        "account": account,
+                        "password": newpwd,
+                        "yzm": verifycode
+                    };
+
+                    ajaxRequest(url, params, successCallback);
+                }
+            }
+
+            function ajaxRequest(url, params, callback) {
+                $.ajax({
+                    url: url,
+                    data: params,
+                    type: 'post',
+                    cache: false,
+                    dataType: 'json',
+                    async: false,
+                    success: callback,
+                    error: function () {
+                        showError('请求异常，请重试或与系统管理员联系');
+                    }
+                });
+            }
+        
+            function showError(msg, e) {
+                $('.errorMag').html(msg);
+                $('.errorMag').show();
+            }
+        </script>
+    </body>
+</html>

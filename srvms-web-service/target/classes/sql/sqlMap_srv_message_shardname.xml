@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.SrvMessageService" jdbcTimeout="5">
+
+    <sql id="queryMessageList">
+        <![CDATA[
+	         select
+	          id,
+		      title
+		     from srv_message
+		     where (servercode = :servercode or allserver = '1') and sendobj = '0' and valid = '1' and status = '1'
+		     order by sendtime desc
+		     limit 6
+    	]]>
+    </sql>
+
+    <sql id="queryMessagePage">
+        <![CDATA[
+	         select
+	          id,
+		      title,
+		      createtime
+		     from srv_message
+		     where (servercode = :servercode or allserver = '1') and sendobj = '0' and valid = '1' and status = '1'
+		    <#if keyword?? && keyword != ''>
+			 and  title like '%' :keyword '%'
+		    </#if>
+		     order by sendtime desc
+    	]]>
+    </sql>
+
+    <sql id="queryMessageDetail">
+        <![CDATA[
+	         select
+	          id,
+		      title,
+		      data,
+		      date_format(createtime, '%Y-%m-%d %H:%i:%s') as createtime
+		     from srv_message
+		     where (servercode = :servercode or allserver = '1') and id = :id and sendobj = '0' and valid = '1' and status = '1'
+    	]]>
+    </sql>
+</sqlMap>

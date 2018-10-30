@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.PubSrvServiceImpl" jdbcTimeout="5">
+
+    <sql id="querySrvDetails">
+        select
+            servername,
+            provinceid,
+            cityid,
+            districtid,
+            area,
+            email,
+            tel,
+            zipcode,
+            contact,
+            contactaddress,
+            createtime,
+            createuser,
+            aftersales,
+            aftersalesname,
+            flag,
+            bankcard,
+            bankcardname,
+            bankcardno,
+            subordinatebranch,
+            obligatetel,
+            alirevenuescale,
+            weixirevenuescale,
+            round(appdiscountratio,0) as appdiscountratio
+        from
+            pub_srv
+        where
+            servercode=:servercode
+    </sql>
+    <sql id="queryService">
+        select
+            servercode,
+            servername,
+            provinceid,
+            cityid,
+            districtid,
+            area,
+            email,
+            tel,
+            zipcode,
+            fax,
+            contact,
+            contactaddress,
+            createtime,
+            updatetime,
+            createuser,
+            updateuser,
+            flag,
+            aftersales,
+            aftersalesname,
+            appdiscountratio,
+            bankcard,
+            bankcardname,
+            bankcardno,
+            subordinatebranch,
+            obligatetel,
+            alirevenuescale,
+            weixirevenuescale,
+            regservercode
+        from
+            pub_srv
+        where
+            servercode = :servercode
+    </sql>
+
+    <sql id = "getServerCodeByCode">
+        select
+            servercode
+        from
+            pub_srv
+        where
+            regservercode = :regservercode
+    </sql>
+</sqlMap>

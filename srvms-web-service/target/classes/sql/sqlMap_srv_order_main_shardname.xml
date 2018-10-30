@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.renew.RenewServiceImpl" jdbcTimeout="5">
+
+    <sql id="queryOrderInfoByCondition">
+        <![CDATA[
+            select
+                billcode,
+                productname,
+                totalamount,
+                ordercode,
+                paytype,
+                status,
+                type,
+                productcode,
+                paytime,
+                createuser,
+                date_format(createtime, '%Y-%m-%d %H:%i:%s') as createtime
+            from
+                srv_order_main
+            where
+                servercode = :servercode and del = '0' and billtype = '0'
+                <#if billcode?? && billcode != ''>
+                    and billcode = :billcode
+                </#if>
+                <#if productcode?? && productcode != '' && productcode != '999'>
+                    and productcode = :productcode
+                </#if>
+                <#if status?? && status != '' && status != '999'>
+                   and status = :status
+                </#if>
+                order by createtime desc
+    	]]>
+    </sql>
+
+    <sql id="queryExtendInfoByCondition">
+        <![CDATA[
+            select
+                item.billcode,
+                item.productname,
+                item.shopcode,
+                item.shopname,
+                item.branchcode,
+                item.branchname,
+                item.renewtime,
+                 main.createuser,
+                date_format(main.createtime, '%Y-%m-%d %H:%i:%s') as createtime
+            from
+                srv_order_main main inner join srv_order_item item on main.billcode = item.billcode
+            where
+                main.servercode = :servercode and  main.del = '0' and  main.billtype = '1'
+                <#if extendbillcode?? && extendbillcode != ''>
+                    and main.billcode = :extendbillcode
+                </#if>
+                <#if shopkey?? && shopkey != '' >
+                    and	(item.shopcode like '%' :shopkey '%' or item.shopname=:shopkey)
+                </#if>
+                <#if branchkey?? && branchkey != ''>
+                    and	(item.branchcode like '%' :branchkey '%' or item.branchname=:branchkey)
+                </#if>
+                order by createtime desc
+    	]]>
+    </sql>
+
+
+    <sql id="generateBillCode">
+        <![CDATA[
+            select
+                count(1)
+            from
+                srv_order_main
+            where
+                servercode = :servercode
+            and date_format(createtime, '%Y-%m-%d') = date_format(now(), '%Y-%m-%d')
+            and billtype = '0'
+    	]]>
+    </sql>
+
+    <sql id="generateExtendBillCode">
+        <![CDATA[
+            select
+                count(1)
+            from
+                srv_order_main
+            where
+                servercode = :servercode
+                and date_format(createtime, '%Y-%m-%d') = date_format(now(), '%Y-%m-%d')
+                and billtype = '1'
+    	]]>
+    </sql>
+
+    <sql id="queryMerchantDetail">
+        <![CDATA[
+            select
+                main.billcode,
+                main.status,
+                main.totalamount,
+                main.paytype,
+                date_format(main.createtime, '%Y-%m-%d %H:%i:%s') as createtime,
+                main.createusername,
+                date_format(main.paytime, '%Y-%m-%d %H:%i:%s') as paytime,
+                item.shopcode,
+                item.shopname,
+                item.branchcode,
+                item.branchname,
+                 item.id,
+                 item.num,
+                main.productname,
+                 main.ordercode,
+                item.renewtime,
+                item.discount,
+                item.payprice,
+                item.saleassistantcode
+            from
+                srv_order_main main inner join srv_order_item item on main.billcode = item.billcode
+            where
+                main.servercode = :servercode
+                and main.del = '0'
+                and main.billtype = '0'
+                and main.billcode = :billcode
+    	]]>
+    </sql>
+
+    <sql id="deleteOrderInfo">
+        <![CDATA[
+           update srv_order_main
+                set del = '1',updateuser = :loginuserid,updatetime = now()
+           where
+                servercode = :servercode
+                and del = '0'
+                and billtype = '0'
+                and billcode = :billcode
+    	]]>
+    </sql>
+
+    <sql id="queryOrderInfoByBillCode">
+        <![CDATA[
+           select
+                main.billcode,
+                main.ordercode,
+                main.totalamount,
+                main.ordercode,
+                item.id as itemid,
+                item.shopcode,
+                item.shopname,
+                item.branchcode,
+                item.branchname,
+                item.productname,
+                item.renewtime,
+                item.discount,
+                item.num,
+                item.payprice
+            from srv_order_main main inner join srv_order_item item on main.billcode = item.billcode
+           where main.servercode = :servercode and main.billcode = :billcode and main.del= '0'
+    	]]>
+    </sql>
+
+    <sql id="queryOrderInfoByBillCode">
+        <![CDATA[
+           select
+                main.billcode,
+                main.totalamount,
+                item.shopcode,
+                item.shopname,
+                item.branchcode,
+                item.branchname,
+                item.productname,
+                item.renewtime,
+                item.discount,
+                item.payprice
+            from srv_order_main main inner join srv_order_item item on main.billcode = item.billcode
+           where servercode = :servercode and billcode = :billcode and del= '0'
+    	]]>
+    </sql>
+
+    <sql id="saveItemInfo">
+        <![CDATA[
+           insert into srv_order_item(
+                billcode,
+                shopcode,
+                shopname,
+                branchcode,
+                branchname,
+                productcode,
+                productname,
+                price,
+                payprice,
+                discountamount,
+                num,
+                discount,
+                renewtime,
+                preexpiretime,
+                sufexpiretime,
+                saleassistantcode
+            )values(
+                :billcode,
+                :shopcode,
+                :shopname,
+                :branchcode,
+                :branchname,
+                :productcode,
+                :productname,
+                :price,
+                :payprice,
+                :discountamount,
+                :num,
+                :discount,
+                <#if renewtime?? && renewtime!=''>
+                 :renewtime,
+                     <#else>
+                        null,
+                </#if>
+                :preexpiretime,
+                <#if sufexpiretime?? && sufexpiretime!=''>
+                :sufexpiretime,
+                     <#else>
+                        null,
+                </#if>
+                  <#if saleassistantcode?? && saleassistantcode!=''>
+                    :saleassistantcode
+                         <#else>
+                            null
+                </#if>
+            )
+    	]]>
+    </sql>
+
+    <sql id="saveMainInfo">
+        <![CDATA[
+           insert into srv_order_main(
+                billcode,
+                ordercode,
+                productcode,
+                productname,
+                totalamount,
+                discountamount,
+                status,
+                type,
+                billtype,
+                servercode,
+                servername,
+                createuser,
+                createusername,
+                createtime,
+                del,
+                remark
+            )values(
+                :billcode,
+                :ordercode,
+                :productcode,
+                :productname,
+                :totalamount,
+                :discountamount,
+                :status,
+                :type,
+                :billtype,
+                :servercode,
+                :servername,
+                :createuser,
+                :createusername,
+                now(),
+                :del,
+                <#if remark?? && remark != ''>
+                    :remark
+                    <#else>
+                    null
+                </#if>
+            )
+    	]]>
+    </sql>
+
+    <sql id="updateRenewPayInfo">
+        <![CDATA[
+           update srv_order_main set
+                paytime = :paytime,
+                paytype = :paymethod,
+                payamount = totalamount,
+                paydiscountamount = 0,
+                status = '1'
+           where
+                billcode = :billcode
+                and servercode = :servercode
+        ]]>
+    </sql>
+
+    <sql id="queryExtendDetail">
+        <![CDATA[
+           select
+                main.billcode,
+                main.productname,
+                item.renewtime,
+                date_format(main.createtime, '%Y-%m-%d %H:%i:%s') as createtime,
+                main.createusername,
+                item.shopcode,
+                item.shopname,
+                item.branchcode,
+                item.branchname,
+                item.preexpiretime,
+                item.sufexpiretime,
+                main.remark
+            from
+                srv_order_main main inner join srv_order_item item on main.billcode = item.billcode
+            where
+                main.servercode = :servercode and  main.del = '0' and  main.billtype = '1' and main.billcode = :billcode
+        ]]>
+    </sql>
+
+    <sql id="updateOrderStatusByServerCode">
+        <![CDATA[
+                update srv_order_main set status = '2'
+                where servercode = :servercode and  del = '0' and billtype = '0' and status = '0' and hour( timediff( now(), createtime) ) >= 1
+        ]]>
+    </sql>
+
+    <sql id="updateRenewStatusByProductCode">
+        <![CDATA[
+                update srv_order_main main inner join srv_order_item item on main.billcode = item.billcode
+                set main.status = '2'
+                where main.del = '0' and main.billtype = '0' and main.status = '0' and item.productcode = :componentcode and item.renewtime in(:year)
+        ]]>
+    </sql>
+
+    <sql id="batchUpdateSaleAssistantCodes">
+        <![CDATA[
+              update srv_order_item set saleassistantcode = :saleassistantcode where billcode = :billcode and shopcode = :shopcode
+        ]]>
+    </sql>
+
+    <sql id="querysAleassistantcodeById">
+        <![CDATA[
+           select
+                saleassistantcode
+            from
+                srv_order_item
+            where
+                billcode= :billcode  and id= :id
+        ]]>
+    </sql>
+
+    <sql id="checkSaleassistantCodeExist">
+        <![CDATA[
+           select
+                id,
+                saleassistantcode
+            from
+                srv_order_item
+            where
+                billcode= :billcode
+        ]]>
+    </sql>
+</sqlMap>

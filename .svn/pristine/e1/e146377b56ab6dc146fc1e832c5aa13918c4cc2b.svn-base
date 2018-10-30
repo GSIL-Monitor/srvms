@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.SrvRoleServiceImpl" jdbcTimeout="5">
+
+    <sql id="insertRegInit">
+        <![CDATA[
+		  INSERT INTO
+		  srv_role(
+				rolecode,
+				servercode,
+				rolename,
+				menus,
+				cangrant,
+				createtime,
+				createuser
+
+			       )
+			VALUES
+				(
+					:rolecode,
+					:servercode,
+					:rolename,
+					:menus,
+					:cangrant,
+					now(),
+					:createuser
+				)
+    	]]>
+    </sql>
+
+</sqlMap>

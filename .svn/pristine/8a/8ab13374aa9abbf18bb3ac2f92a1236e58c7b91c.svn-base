@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:provider timeout="5000" filter="dubboContextFilter" />
+
+    <!-- 自动查找可用的端口号 -->
+    <bean id="dynamicDubboPortReaderDao" class="com.wgb.dubbo.DynamicDubboPortReaderImpl"
+          init-method="init"/>
+
+    <!--接口监控 -->
+    <dubbo:monitor protocol="registry"/>
+
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <dubbo:protocol name="dubbo" threadpool="fixed" threads="200" accepts="1000" />
+
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.admin.ApiPubSrvService" ref="apiPubSrvServiceImpl"  retries="0"/>
+
+    <dubbo:service interface="com.wgb.service.dubbo.srvms.admin.ApiSrvPayService" ref="apiSrvPayServiceImpl"  retries="0"/>
+</beans>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.UserRoleServiceImpl" jdbcTimeout="5">
+
+	<sql id="insertUserRole">
+		<![CDATA[
+		    insert into portal_user_role(userid, roleid,createuser,createtime)
+		    values(:userid,:roleid,:loginuserid,now())
+    	]]>
+	</sql>
+
+	<sql id="deleteUserRole">
+		<![CDATA[
+			delete from portal_user_role where 1=1
+			<#if userid?? && userid != ''>
+				and userid = :userid
+			</#if>
+			<#if roleid?? && roleid != ''>
+				and roleid = :roleid
+			</#if>
+    	]]>
+	</sql>
+
+</sqlMap>

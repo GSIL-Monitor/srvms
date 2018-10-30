@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.SrvAuthServiceImpl" jdbcTimeout="5">
+    <sql id="queryAuthListByCondition">
+        <![CDATA[
+            select
+                id,
+                pid,
+                name
+            from
+                srv_menu
+            where
+                level < 4
+            <#if url?? && url !=''>
+               and url = :url
+            </#if>
+        ]]>
+    </sql>
+</sqlMap>

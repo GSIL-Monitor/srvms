@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.address.ServiceAddressServiceImpl" jdbcTimeout="5">
+
+    <sql id="queryServiceAddress">
+        <![CDATA[
+            select
+                servercode,
+                contact,
+                contacttel,
+                address
+            from service_address where servercode = :servercode and valid = '1'
+    	]]>
+    </sql>
+
+    <sql id="saveServiceAddress">
+        <![CDATA[
+           insert into service_address(
+                    servercode,
+                    contact,
+                    contacttel,
+                    address,
+                    valid
+           )values(
+                    :servercode,
+                    :contact,
+                    :contacttel,
+                    :address,
+                    '1'
+           )
+    	]]>
+    </sql>
+
+    <sql id="updateServiceAddress">
+        <![CDATA[
+            update service_address set contact = :contact,contacttel = :contacttel,address = :address where servercode = :servercode
+    	]]>
+    </sql>
+
+</sqlMap>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- dubbo非生产环境去掉启动依赖校验 -->
+    <dubbo:consumer check="${dubbo.consumer.check}" />
+
+    <!-- 统一服务接口 -->
+    <dubbo:reference id="adminBasicService" interface="com.wgb.service.dubbo.basic.admin.AdminBasicService" />
+
+    <!-- 商户接口 -->
+    <dubbo:reference id="apiShopService" interface="com.wgb.service.dubbo.urms.admin.ApiShopService" />
+
+    <!-- 设备异常消息接口 -->
+    <dubbo:reference id="apiDeviceBugService" interface="com.wgb.service.dubbo.bugms.admin.ApiDeviceBugService" />
+
+   <!-- 设备异常消息接口 -->
+    <dubbo:reference id="apiBranchService" interface="com.wgb.service.dubbo.urms.admin.ApiBranchService"  retries="0" />
+    <dubbo:reference id="ApiShopConfigService" interface="com.wgb.service.dubbo.pays.admin.ApiShopConfigService"  retries="0" />
+    <dubbo:reference id="ApiPayIncomeService" interface="com.wgb.service.dubbo.pays.admin.ApiPayIncomeService"  retries="0" />
+    <dubbo:reference id="ApiShopService" interface="com.wgb.service.dubbo.urms.admin.ApiShopService"  retries="0" />
+   <dubbo:reference id="ApiImportBillService" interface="com.wgb.service.dubbo.pays.admin.ApiImportBillService"  retries="0" />
+    <dubbo:reference id="ApiFileService" interface="com.wgb.service.dubbo.fms.admin.ApiFileService"  retries="0" />
+    <dubbo:reference id="apitShopService" interface="com.wgb.service.dubbo.urms.web.ApitShopService"  retries="0" />
+
+
+</beans>

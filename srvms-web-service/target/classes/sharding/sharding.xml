@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sharding>
+
+    <!-- 通过商家编码增量区间路由 -->
+    <shardRouter id="shardshopcode">
+        <interval start="100000000" end="199999999" mod="3" param="shardshopcode"><shard result="0">shard0</shard><shard result="1">shard1</shard><shard result="2">shard2</shard></interval>
+    </shardRouter>
+
+    <!-- 根据指定shard名称路由 -->
+    <shardRouter id="shardname">
+        <choose><when test="shardname == 'shard_default'">shard0</when><when test="shardname == 'shard0'">shard0</when><when test="shardname == 'shard1'">shard1</when><when test="shardname == 'shard2'">shard2</when></choose>
+    </shardRouter>
+
+</sharding>

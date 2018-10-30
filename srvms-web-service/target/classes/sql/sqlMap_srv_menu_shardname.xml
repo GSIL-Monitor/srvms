@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.SrvMenuServiceImpl" jdbcTimeout="5">
+
+    <sql id="getAllMenu">
+        <![CDATA[
+		    select
+		        id,
+                pid,
+                name,
+                url,
+                level,
+                ordernum,
+                domainid
+            from srv_menu order by ordernum
+    	]]>
+    </sql>
+
+    <sql id="getCacheList">
+        <![CDATA[
+		    select
+		        id,
+                pid,
+                name,
+                url,
+                level,
+                ordernum,
+                domainid
+            from srv_menu order by ordernum
+    	]]>
+    </sql>
+
+    <sql id="getMenuByUserId">
+        <![CDATA[
+        		select menus from srv_role a inner join srv_user_role b on a.id = b.roleid where b.userid = :userid
+    	]]>
+    </sql>
+
+    <sql id="getMenuListByIds">
+        <![CDATA[
+		    SELECT a.id,a.pid,a.name,a.url,a.level,b.domainurl
+		    from srv_menu a left join srv_domain b on a.domainid = b.id where a.id in (:menuIds) order by a.ordernum
+    	]]>
+    </sql>
+
+    <sql id="getMenuList">
+        <![CDATA[
+		    SELECT a.id,a.pid,a.name,a.url,a.level,b.domainurl,a.ordernum,a.icon
+		    from srv_menu a left join srv_domain b on a.domainid = b.id order by a.ordernum
+    	]]>
+    </sql>
+
+    <sql id="getMenuInfoById">
+        <![CDATA[
+		    select
+                id,
+                pid,
+                name,
+                url,
+                level,
+                ordernum,
+                domainid
+            from
+                srv_menu
+            where
+                id = : id
+    	]]>
+    </sql>
+
+    <sql id="insertMenu">
+        <![CDATA[
+	        INSERT INTO srv_menu(pid, name, url,type,level,domainid,createuser,createtime,updateuser,updatetime,ordernum,remark,icon,flag,subname)
+	        VALUES(
+	        <#if pid?? && pid != ''>
+	            :pid,
+	            <#else>
+	            -1,
+	        </#if>
+	        <#if name?? && name != ''>
+	            :name,
+	            <#else>
+	            null,
+	        </#if>
+	        <#if url?? && url != ''>
+	            :url,
+	            <#else>
+	            null,
+	        </#if>
+	        <#if type?? && type != ''>
+	            :type,
+	            <#else>
+	            null,
+	        </#if>
+	        <#if level??>
+	            :level,
+	            <#else>
+	            null,
+	        </#if>
+	        <#if domainid??>
+	            :domainid,
+	            <#else>
+	            null,
+	        </#if>
+	        :loginuserid,
+	        now(),
+	        0,
+	        null,
+	        :ordernum,
+	        <#if remark?? && remark != ''>
+	            :remark,
+	            <#else>
+	            null,
+	        </#if>
+	        <#if icon?? && icon != ''>
+	            :icon,
+	            <#else>
+	            null,
+	        </#if>
+	        '1',
+	        <#if subname?? && subname != ''>
+	            :subname
+	            <#else>
+	            null
+	        </#if>
+	        )
+    	]]>
+    </sql>
+
+    <sql id="delMenu">
+        <![CDATA[
+            delete from srv_menu where id = :id;
+    	]]>
+    </sql>
+
+    <sql id="updateMenu">
+        <![CDATA[
+            update srv_menu set updatetime = now()
+            	,updateuser = :loginuserid
+            	<#if name??>
+				,name = :name
+            	</#if>
+            	<#if url??>
+				,url = :url
+            	</#if>
+            	<#if remark??>
+				,remark = :remark
+            	</#if>
+            	<#if ordernum??>
+				,ordernum = :ordernum
+            	</#if>
+            	<#if level??>
+				,level = :level
+            	</#if>
+            	<#if type??>
+				,type = :type
+            	</#if>
+            	<#if icon??>
+				,icon = :icon
+            	</#if>
+            	<#if flag??>
+				,flag = :flag
+            	</#if>
+            	<#if subname??>
+				,subname = :subname
+            	</#if>
+            	<#if domainid??>
+				,domainid = :domainid
+            	</#if>
+            	where id = :id;
+    	]]>
+    </sql>
+
+    <sql id="batchUpdateMenu" jdbcTimeout="30">
+        <![CDATA[
+            update srv_menu set updatetime = now(),updateuser = :loginuserid,pid = :pid,level = :level,ordernum = :ordernum where id = :id
+    	]]>
+    </sql>
+
+</sqlMap>

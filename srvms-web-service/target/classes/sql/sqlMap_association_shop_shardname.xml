@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.SrvAssociationShopServiceImpl" jdbcTimeout="5">
+
+    <sql id="addAssociationInfo">
+        <![CDATA[
+		   INSERT INTO srv_association (
+               servercode,
+               serverusername,
+               servertel,
+               serverarea,
+               shopcode,
+               shopname,
+               shopusername,
+               shoptel,
+               shoparea,
+               shopindustryid,
+               shopindustryname,
+               createtime,
+               createuser
+           )
+           VALUES(
+                :servercode,
+                :serverusername,
+                :servertel,
+                :serverarea,
+                :shopcode,
+                :shopname,
+                :shopusername,
+                :shoptel,
+               <#if shoparea?? && shoparea != ''>
+                :shoparea,
+                <#else>
+                '',
+                </#if>
+                :shopindustryid,
+                :shopindustryname,
+                now(),
+                :loginuserid
+           )
+    	]]>
+    </sql>
+
+    <sql id="queryPageInfo">
+        <![CDATA[
+		  select
+		    id,
+            shopcode,
+            shopname,
+            shopusername,
+            shoptel,
+            status,
+            shopindustryname,
+            shopindustryid,
+            createtime
+            from srv_association
+            where servercode=:servercode and status!=1
+             <#if keyword?? && keyword != ''>
+                  and	(shopcode like '%' :keyword '%' or shopname like '%' :keyword '%')
+            </#if>
+           <#if status?? && status != ''>
+                  and	status = :status
+           </#if>
+           <#if industry?? && industry != ''>
+                  and shopindustryid = :industry
+           </#if>
+           <#if starttime?? && starttime != ''>
+                and createtime >= timestamp(:starttime)
+           </#if>
+          <#if endtime?? && endtime != ''>
+			   		and createtime <= timestamp(:endtime)
+		  </#if>
+           order by createtime desc
+    	]]>
+    </sql>
+
+    <sql id="getIndustryNameList">
+        <![CDATA[
+		  select
+		    shopindustryname,
+		    shopindustryid
+          from
+            srv_association
+          where
+            servercode = :servercode
+          group by shopindustryname
+    	]]>
+    </sql>
+
+</sqlMap>

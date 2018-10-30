@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <context:component-scan base-package="com.wgb.controller"/>
+
+    <bean id="exceptionHandler" class="com.wgb.interceptor.ServiceExceptionHandler"/>
+
+    <!-- 注解依赖的适配器 AnnotationMethodHandlerAdapter -->
+    <bean
+            class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <ref bean="mappingJacksonHttpMessageConverter"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- Spring JSON 格式转换依赖的Jar -->
+    <bean id="mappingJacksonHttpMessageConverter"
+          class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+        <!-- 解决 HttpMediaTypeNotAcceptableException: Could not find acceptable
+            representation -->
+        <property name="supportedMediaTypes">
+            <list>
+                <value>application/json</value>
+                <value>text/json</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 注解依赖的适配器 DefaultAnnotationHandlerMapping -->
+    <bean
+            class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+        <property name="interceptors">
+            <list>
+                <!-- 权限过滤拦截器 -->
+                <bean id="authInterceptor" class="com.wgb.interceptor.AuthInterceptor"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- Spring @AutoWired 依赖自动注入,不需要setter方法 -->
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+    <!-- FreeMarker视图解析器 -->
+    <bean id="freemarkerResolver"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <!--<property name="cache" value="true"/> -->
+        <property name="order" value="1"/>
+        <property name="prefix" value=""/>
+        <property name="suffix" value=".ftl"/>
+        <property name="requestContextAttribute" value="request"/>
+        <property name="exposeSpringMacroHelpers" value="true"/>
+        <property name="exposeRequestAttributes" value="true"/>
+        <property name="exposeSessionAttributes" value="true"/>
+        <property name="allowSessionOverride" value="true"/>
+        <property name="contentType" value="text/html;charset=utf-8"/>
+        <!--编码 -->
+        <property name="viewClass"
+                  value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"/>
+    </bean>
+
+    <bean id="blockDirective" class="cn.org.rapid_framework.freemarker.directive.BlockDirective"/>
+    <bean id="extendsDirective" class="cn.org.rapid_framework.freemarker.directive.ExtendsDirective"/>
+    <bean id="overrideDirective" class="cn.org.rapid_framework.freemarker.directive.OverrideDirective"/>
+    <bean id="superDirective" class="cn.org.rapid_framework.freemarker.directive.SuperDirective"/>
+    <bean id="menuDirective"  class="com.wgb.freemarker.Menu" />
+    <bean id="userDirective"  class="com.wgb.freemarker.User" />
+
+    <bean id="freemarkerConfig"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <description>Required for Freemarker to work in web tier</description>
+        <property name="configuration" ref="freemarkerConfiguration"/>
+    </bean>
+
+    <bean id="freemarkerConfiguration"
+          class="org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean">
+        <description>Using the Config directly so we can use it outside the
+            web tier
+        </description>
+        <!-- 模板加载路径 -->
+        <property name="templateLoaderPaths" value="/WEB-INF/ftl/"/>
+        <property name="defaultEncoding" value="utf-8"/>
+        <property name="freemarkerVariables">
+            <map>
+                <!--下面四个是实现freemarker模板的继承功能-->
+                <entry key="extends" value-ref="extendsDirective"/>
+                <entry key="override" value-ref="overrideDirective"/>
+                <entry key="block" value-ref="blockDirective"/>
+                <entry key="super" value-ref="superDirective"/>
+                <!-- 自定义菜单标签 -->
+                <entry key="menu" value-ref="menuDirective" />
+                <entry key="user" value-ref="userDirective" />
+            </map>
+        </property>
+    </bean>
+
+    <!-- 支持上传文件 -->
+    <bean id="multipartResolver" class="com.wgb.util.MultiParseFile">
+        <!-- 200M -->
+        <property name="maxUploadSize">
+            <value>209715200</value>
+        </property>
+        <property name="maxInMemorySize">
+            <value>204800</value>
+        </property>
+        <property name="defaultEncoding">
+            <value>UTF-8</value>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cxf="http://cxf.apache.org/core"
+       xmlns:ss="http://www.springframework.org/schema/security"
+       xmlns:jaxws="http://cxf.apache.org/jaxws" xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jms="http://www.springframework.org/schema/jms"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+   	http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+   	http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+   	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+   	http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd
+   	http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+   	http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+   	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+   	http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms.xsd
+   	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <bean id="dataSourceDefault" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://192.168.1.243:3306/zl_srvms?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false" />
+        <property name="username" value="devlop" />
+        <property name="password" value="devlop" />
+        <!-- 连接初始值，连接池启动时创建的连接数量的初始值 -->
+        <property name="initialSize" value="5" />
+        <!-- 连接池的最大值，同一时间可以从池分配的最多连接数量，0时无限制 -->
+        <property name="maxActive" value="200" />
+        <!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 ，0时无限制-->
+        <property name="maxIdle" value="30" />
+        <!-- 最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请去一些连接，以免洪峰来时来不及申请 -->
+        <property name="minIdle" value="2" />
+        <!-- 是否对已备语句进行池管理（布尔值），是否对PreparedStatement进行缓存 -->
+        <property name="poolPreparedStatements" value="true" />
+        <!--removeAbandoned: 是否自动回收超时连接-->
+        <property name="removeAbandoned" value="true"/>
+        <!--removeAbandonedTimeout: 超时时间(以秒数为单位)-->
+        <property name="removeAbandonedTimeout" value="180"/>
+        <!--maxWait: 超时等待时间以毫秒为单位 6000毫秒/1000等于60秒-->
+        <property name="maxWait" value="3000"/>
+        <!-- 在空闲连接回收器执行周期(毫秒) -->
+        <property name="timeBetweenEvictionRunsMillis" value="3600000"/>
+        <!--  在每次空闲连接回收器线程(如果有)运行时检查的连接数量 -->
+        <property name="numTestsPerEvictionRun" value="10"/>
+        <!-- 最小空闲时间 -connection的空闲时间大于这个值,就直接被关闭,并从连接池中删除-->
+        <property name="minEvictableIdleTimeMillis" value="7200000"/>
+        <!-- 验证链接是否有效的sql语句 -->
+        <property name="validationQuery" value="select 1" />
+        <!-- 获取链接之前是否测试链接的可用性 -->
+        <property name="testOnBorrow" value="true"/>
+        <!-- 连接被归还到连接池中时是否校验可用 -->
+        <property name="testOnReturn" value="true"/>
+        <!--  	连接被空闲连接回收器检测回收时否校验可用 -->
+        <property name="testWhileIdle" value="true"/>
+
+    </bean>
+
+    <bean id="dataSource1" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://192.168.1.245:3306/zl_srvms?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false" />
+        <property name="username" value="devlop" />
+        <property name="password" value="devlop" />
+        <!-- 连接初始值，连接池启动时创建的连接数量的初始值 -->
+        <property name="initialSize" value="5" />
+        <!-- 连接池的最大值，同一时间可以从池分配的最多连接数量，0时无限制 -->
+        <property name="maxActive" value="200" />
+        <!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 ，0时无限制-->
+        <property name="maxIdle" value="30" />
+        <!-- 最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请去一些连接，以免洪峰来时来不及申请 -->
+        <property name="minIdle" value="2" />
+        <!-- 是否对已备语句进行池管理（布尔值），是否对PreparedStatement进行缓存 -->
+        <property name="poolPreparedStatements" value="true" />
+        <!--removeAbandoned: 是否自动回收超时连接-->
+        <property name="removeAbandoned" value="true"/>
+        <!--removeAbandonedTimeout: 超时时间(以秒数为单位)-->
+        <property name="removeAbandonedTimeout" value="180"/>
+        <!--maxWait: 超时等待时间以毫秒为单位 6000毫秒/1000等于60秒-->
+        <property name="maxWait" value="3000"/>
+        <!-- 在空闲连接回收器执行周期(毫秒) -->
+        <property name="timeBetweenEvictionRunsMillis" value="3600000"/>
+        <!--  在每次空闲连接回收器线程(如果有)运行时检查的连接数量 -->
+        <property name="numTestsPerEvictionRun" value="10"/>
+        <!-- 最小空闲时间 -connection的空闲时间大于这个值,就直接被关闭,并从连接池中删除-->
+        <property name="minEvictableIdleTimeMillis" value="7200000"/>
+        <!-- 验证链接是否有效的sql语句 -->
+        <property name="validationQuery" value="select 1" />
+        <!-- 获取链接之前是否测试链接的可用性 -->
+        <property name="testOnBorrow" value="true"/>
+        <!-- 连接被归还到连接池中时是否校验可用 -->
+        <property name="testOnReturn" value="true"/>
+        <!--  	连接被空闲连接回收器检测回收时否校验可用 -->
+        <property name="testWhileIdle" value="true"/>
+
+    </bean>
+
+    <bean id="dataSource2" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://192.168.1.247:3306/zl_srvms?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false" />
+        <property name="username" value="devlop" />
+        <property name="password" value="devlop" />
+        <!-- 连接初始值，连接池启动时创建的连接数量的初始值 -->
+        <property name="initialSize" value="5" />
+        <!-- 连接池的最大值，同一时间可以从池分配的最多连接数量，0时无限制 -->
+        <property name="maxActive" value="200" />
+        <!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 ，0时无限制-->
+        <property name="maxIdle" value="30" />
+        <!-- 最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请去一些连接，以免洪峰来时来不及申请 -->
+        <property name="minIdle" value="2" />
+        <!-- 是否对已备语句进行池管理（布尔值），是否对PreparedStatement进行缓存 -->
+        <property name="poolPreparedStatements" value="true" />
+        <!--removeAbandoned: 是否自动回收超时连接-->
+        <property name="removeAbandoned" value="true"/>
+        <!--removeAbandonedTimeout: 超时时间(以秒数为单位)-->
+        <property name="removeAbandonedTimeout" value="180"/>
+        <!--maxWait: 超时等待时间以毫秒为单位 6000毫秒/1000等于60秒-->
+        <property name="maxWait" value="3000"/>
+        <!-- 在空闲连接回收器执行周期(毫秒) -->
+        <property name="timeBetweenEvictionRunsMillis" value="3600000"/>
+        <!--  在每次空闲连接回收器线程(如果有)运行时检查的连接数量 -->
+        <property name="numTestsPerEvictionRun" value="10"/>
+        <!-- 最小空闲时间 -connection的空闲时间大于这个值,就直接被关闭,并从连接池中删除-->
+        <property name="minEvictableIdleTimeMillis" value="7200000"/>
+        <!-- 验证链接是否有效的sql语句 -->
+        <property name="validationQuery" value="select 1" />
+        <!-- 获取链接之前是否测试链接的可用性 -->
+        <property name="testOnBorrow" value="true"/>
+        <!-- 连接被归还到连接池中时是否校验可用 -->
+        <property name="testOnReturn" value="true"/>
+        <!--  	连接被空闲连接回收器检测回收时否校验可用 -->
+        <property name="testWhileIdle" value="true"/>
+
+    </bean>
+
+    <bean id="dataSourceDefaultS" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://192.168.1.244:3306/zl_srvms?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false" />
+        <property name="username" value="devlop" />
+        <property name="password" value="devlop" />
+        <!-- 连接初始值，连接池启动时创建的连接数量的初始值 -->
+        <property name="initialSize" value="5" />
+        <!-- 连接池的最大值，同一时间可以从池分配的最多连接数量，0时无限制 -->
+        <property name="maxActive" value="200" />
+        <!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 ，0时无限制-->
+        <property name="maxIdle" value="30" />
+        <!-- 最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请去一些连接，以免洪峰来时来不及申请 -->
+        <property name="minIdle" value="2" />
+        <!-- 是否对已备语句进行池管理（布尔值），是否对PreparedStatement进行缓存 -->
+        <property name="poolPreparedStatements" value="true" />
+        <!--removeAbandoned: 是否自动回收超时连接-->
+        <property name="removeAbandoned" value="true"/>
+        <!--removeAbandonedTimeout: 超时时间(以秒数为单位)-->
+        <property name="removeAbandonedTimeout" value="180"/>
+        <!--maxWait: 超时等待时间以毫秒为单位 6000毫秒/1000等于60秒-->
+        <property name="maxWait" value="3000"/>
+        <!-- 在空闲连接回收器执行周期(毫秒) -->
+        <property name="timeBetweenEvictionRunsMillis" value="3600000"/>
+        <!--  在每次空闲连接回收器线程(如果有)运行时检查的连接数量 -->
+        <property name="numTestsPerEvictionRun" value="10"/>
+        <!-- 最小空闲时间 -connection的空闲时间大于这个值,就直接被关闭,并从连接池中删除-->
+        <property name="minEvictableIdleTimeMillis" value="7200000"/>
+        <!-- 验证链接是否有效的sql语句 -->
+        <property name="validationQuery" value="select 1" />
+        <!-- 获取链接之前是否测试链接的可用性 -->
+        <property name="testOnBorrow" value="true"/>
+        <!-- 连接被归还到连接池中时是否校验可用 -->
+        <property name="testOnReturn" value="true"/>
+        <!--  	连接被空闲连接回收器检测回收时否校验可用 -->
+        <property name="testWhileIdle" value="true"/>
+
+    </bean>
+
+    <bean id="dataSource1S" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://192.168.1.246:3306/zl_srvms?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false" />
+        <property name="username" value="devlop" />
+        <property name="password" value="devlop" />
+        <!-- 连接初始值，连接池启动时创建的连接数量的初始值 -->
+        <property name="initialSize" value="5" />
+        <!-- 连接池的最大值，同一时间可以从池分配的最多连接数量，0时无限制 -->
+        <property name="maxActive" value="200" />
+        <!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 ，0时无限制-->
+        <property name="maxIdle" value="30" />
+        <!-- 最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请去一些连接，以免洪峰来时来不及申请 -->
+        <property name="minIdle" value="2" />
+        <!-- 是否对已备语句进行池管理（布尔值），是否对PreparedStatement进行缓存 -->
+        <property name="poolPreparedStatements" value="true" />
+        <!--removeAbandoned: 是否自动回收超时连接-->
+        <property name="removeAbandoned" value="true"/>
+        <!--removeAbandonedTimeout: 超时时间(以秒数为单位)-->
+        <property name="removeAbandonedTimeout" value="180"/>
+        <!--maxWait: 超时等待时间以毫秒为单位 6000毫秒/1000等于60秒-->
+        <property name="maxWait" value="3000"/>
+        <!-- 在空闲连接回收器执行周期(毫秒) -->
+        <property name="timeBetweenEvictionRunsMillis" value="3600000"/>
+        <!--  在每次空闲连接回收器线程(如果有)运行时检查的连接数量 -->
+        <property name="numTestsPerEvictionRun" value="10"/>
+        <!-- 最小空闲时间 -connection的空闲时间大于这个值,就直接被关闭,并从连接池中删除-->
+        <property name="minEvictableIdleTimeMillis" value="7200000"/>
+        <!-- 验证链接是否有效的sql语句 -->
+        <property name="validationQuery" value="select 1" />
+        <!-- 获取链接之前是否测试链接的可用性 -->
+        <property name="testOnBorrow" value="true"/>
+        <!-- 连接被归还到连接池中时是否校验可用 -->
+        <property name="testOnReturn" value="true"/>
+        <!--  	连接被空闲连接回收器检测回收时否校验可用 -->
+        <property name="testWhileIdle" value="true"/>
+
+    </bean>
+
+    <bean id="dataSource2S" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://192.168.1.248:3306/zl_srvms?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false" />
+        <property name="username" value="devlop" />
+        <property name="password" value="devlop" />
+        <!-- 连接初始值，连接池启动时创建的连接数量的初始值 -->
+        <property name="initialSize" value="5" />
+        <!-- 连接池的最大值，同一时间可以从池分配的最多连接数量，0时无限制 -->
+        <property name="maxActive" value="200" />
+        <!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 ，0时无限制-->
+        <property name="maxIdle" value="30" />
+        <!-- 最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请去一些连接，以免洪峰来时来不及申请 -->
+        <property name="minIdle" value="2" />
+        <!-- 是否对已备语句进行池管理（布尔值），是否对PreparedStatement进行缓存 -->
+        <property name="poolPreparedStatements" value="true" />
+        <!--removeAbandoned: 是否自动回收超时连接-->
+        <property name="removeAbandoned" value="true"/>
+        <!--removeAbandonedTimeout: 超时时间(以秒数为单位)-->
+        <property name="removeAbandonedTimeout" value="180"/>
+        <!--maxWait: 超时等待时间以毫秒为单位 6000毫秒/1000等于60秒-->
+        <property name="maxWait" value="3000"/>
+        <!-- 在空闲连接回收器执行周期(毫秒) -->
+        <property name="timeBetweenEvictionRunsMillis" value="3600000"/>
+        <!--  在每次空闲连接回收器线程(如果有)运行时检查的连接数量 -->
+        <property name="numTestsPerEvictionRun" value="10"/>
+        <!-- 最小空闲时间 -connection的空闲时间大于这个值,就直接被关闭,并从连接池中删除-->
+        <property name="minEvictableIdleTimeMillis" value="7200000"/>
+        <!-- 验证链接是否有效的sql语句 -->
+        <property name="validationQuery" value="select 1" />
+        <!-- 获取链接之前是否测试链接的可用性 -->
+        <property name="testOnBorrow" value="true"/>
+        <!-- 连接被归还到连接池中时是否校验可用 -->
+        <property name="testOnReturn" value="true"/>
+        <!--  	连接被空闲连接回收器检测回收时否校验可用 -->
+        <property name="testWhileIdle" value="true"/>
+
+    </bean>
+
+    <!-- 读写主库数据源管理器 -->
+    <bean id="shardRegister"
+          class="com.suning.framework.dal.datasource.DefaultShardRegister">
+        <property name="shards">
+            <set>
+                <bean class="com.suning.framework.dal.datasource.Shard">
+                    <property name="id" value="shard0"/>
+                    <property name="dataSource" ref="dataSourceDefault"/>
+                </bean>
+                <bean class="com.suning.framework.dal.datasource.Shard">
+                    <property name="id" value="shard1"/>
+                    <property name="dataSource" ref="dataSource1"/>
+                </bean>
+                <bean class="com.suning.framework.dal.datasource.Shard">
+                    <property name="id" value="shard2"/>
+                    <property name="dataSource" ref="dataSource2"/>
+                </bean>
+            </set>
+        </property>
+    </bean>
+
+    <!-- 只读备库数据源管理器 -->
+    <bean id="shardSlaveRegister"
+          class="com.suning.framework.dal.datasource.DefaultShardRegister">
+        <property name="shards">
+            <set>
+                <bean class="com.suning.framework.dal.datasource.Shard">
+                    <property name="id" value="shard0"/>
+                    <property name="dataSource" ref="dataSourceDefaultS"/>
+                </bean>
+                <bean class="com.suning.framework.dal.datasource.Shard">
+                    <property name="id" value="shard1"/>
+                    <property name="dataSource" ref="dataSource1S"/>
+                </bean>
+                <bean class="com.suning.framework.dal.datasource.Shard">
+                    <property name="id" value="shard2"/>
+                    <property name="dataSource" ref="dataSource2S"/>
+                </bean>
+            </set>
+        </property>
+    </bean>
+
+    <!-- 封装分页方法后的dalClient(读写主库) -->
+    <bean id="baseDalClient" class="com.wgb.dao.BaseDalClient">
+        <!-- 统一数据源的管理 -->
+        <property name="shardRegister" ref="shardRegister"/>
+
+        <!-- 配置分库路由规则的xml路径，支持通配 -->
+        <property name="shardingConfigLocation" value="classpath*:sharding/sharding.xml"/>
+
+        <!-- 默认的路由分片，即默认数据源。路由不到分片时采用默认该默认数据源 -->
+        <property name="defualtShardName" value="shard0"/>
+
+        <!-- SQL的Xml配置路径 -->
+        <property name="sqlMapConfigLocation" value="classpath*:sql/sqlMap_*.xml"/>
+    </bean>
+
+
+    <!-- 封装分页方法后的dalClient(只读备库) -->
+    <bean id="readOnlyDalClient" class="com.wgb.dao.ReadOnlyDalClientImpl">
+        <!-- 统一数据源的管理 -->
+        <property name="shardRegister" ref="shardSlaveRegister"/>
+
+        <!-- 配置分库路由规则的xml路径，支持通配 -->
+        <property name="shardingConfigLocation" value="classpath*:sharding/sharding.xml"/>
+
+        <!-- 默认的路由分片，即默认数据源。路由不到分片时采用默认该默认数据源 -->
+        <property name="defualtShardName" value="shard0"/>
+
+        <!-- SQL的Xml配置路径 -->
+        <property name="sqlMapConfigLocation" value="classpath*:sql/sqlMap_*.xml"/>
+    </bean>
+
+    <!-- 公共dalClient,业务Service建议注入此bean -->
+    <bean id="commonDalClient" class="com.wgb.dao.CommonDalClient">
+        <property name="dalClient" ref="baseDalClient"/>
+        <property name="readOnlyDalClient" ref="readOnlyDalClient"/>
+    </bean>
+
+    <!-- 事务相关配置 -->
+    <bean id="transactionManager" class="com.suning.framework.dal.transaction.MultiDataSourceTransactionManager">
+        <property name="shardRegister" ref="shardRegister"/>
+    </bean>
+
+    <!-- 定义事务通知 -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="insert*" propagation="REQUIRED" read-only="false"
+                       rollback-for="java.lang.Exception"/>
+            <tx:method name="save*" propagation="REQUIRED" read-only="false"
+                       rollback-for="java.lang.Exception"/>
+            <tx:method name="update*" propagation="REQUIRED" read-only="false"
+                       rollback-for="java.lang.Exception"/>
+            <tx:method name="modify*" propagation="REQUIRED" read-only="false"
+                       rollback-for="java.lang.Exception"/>
+            <tx:method name="delete*" propagation="REQUIRED" read-only="false"
+                       rollback-for="java.lang.Exception"/>
+            <tx:method name="find*" propagation="REQUIRED"/>
+            <tx:method name="get*" propagation="REQUIRED"/>
+            <tx:method name="select*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+    <aop:config>
+        <aop:pointcut id="interceptorPointCuts"
+                      expression="execution(* com.wgb.service.*.*(..)) || execution(* com.wgb.service.*.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="interceptorPointCuts"/>
+    </aop:config>
+
+</beans>

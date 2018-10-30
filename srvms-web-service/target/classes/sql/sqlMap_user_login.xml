@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.UserLoginServiceImpl">
+
+    <sql id="checkExist">
+        <![CDATA[
+        select
+        count(1)
+        from srv_user
+        where servercode=:serverid and del=0
+        <#if account?? && account !=''>
+            and account =:account
+        </#if>
+        <#if username?? && username !=''>
+            and username =:username
+        </#if>
+        <#if password?? && password !=''>
+            and password =:password
+        </#if>
+        ]]>
+    </sql>
+    <sql id="userlogin">
+        <![CDATA[
+        select id,
+        account,
+        username,
+        servercode,
+        fullname,
+        flag
+        from srv_user
+        where username=:username
+        and servercode =:serverid
+        and password =:password
+        ]]>
+    </sql>
+    <sql id="accountlogin">
+        <![CDATA[
+        select id,
+        account,
+        username,
+        servercode,
+        fullname,
+        flag
+        from srv_user
+        where account=:account
+        and password =:password
+        ]]>
+    </sql>
+</sqlMap>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.aftersale.AfterSaleServiceImpl" jdbcTimeout="5">
+
+    <sql id="queryAfterSaleList">
+        <![CDATA[
+             SELECT
+              id,
+              userid,
+              username,
+              phone,
+              telephone,
+              email,
+              STATUS,
+              AREA,
+              createuser,
+              createtime,
+              updateuser,
+              updatetime,
+              del
+            FROM
+              srv_aftersaler
+              WHERE del=0
+               <#if username?? && username != ''>
+                        and	(username like '%' :username '%')
+                </#if>
+                <#if userid?? && userid != ''>
+                        and	userid = :userid
+                </#if>
+                <#if status?? && status != ''>
+                        and	status = :status
+                </#if>
+              ORDER BY createtime DESC
+           	]]>
+    </sql>
+
+    <sql id="updateFlag">
+        <![CDATA[
+             update srv_aftersaler set status=:status where userid=:userid
+           	]]>
+    </sql>
+
+    <sql id="updateFlagAndArea">
+        <![CDATA[
+             update srv_aftersaler set status=:status,area='' where userid=:userid
+           	]]>
+    </sql>
+
+    <sql id="getAftersaleTel">
+        <![CDATA[
+            select telephone from srv_aftersaler where userid=:aftersales
+           	]]>
+    </sql>
+
+    <sql id="addRegAfterSaler">
+        <![CDATA[
+		 INSERT INTO srv_aftersaler (
+              userid,
+              username,
+              phone,
+              telephone,
+              email,
+              STATUS,
+              AREA,
+              createuser,
+              createtime,
+              del
+            )
+            VALUES
+              (
+                :userid,
+                 <#if username?? && username != ''>
+				     :username,
+				 <#else>
+				      null,
+			     </#if>
+                <#if phone?? && phone != ''>
+				     :phone,
+				 <#else>
+				      null,
+			     </#if>
+                <#if telephone?? && telephone != ''>
+				     :telephone,
+				 <#else>
+				      null,
+			     </#if>
+                 <#if email?? && email != ''>
+				     :email,
+				 <#else>
+				      null,
+			     </#if>
+                 1,
+                 <#if area?? && area != ''>
+				      :area,
+				 <#else>
+				      null,
+			     </#if>
+                :loginuserid,
+                 now(),
+                 0
+              )
+    	]]>
+    </sql>
+
+    <sql id="updateAfterSale">
+        <![CDATA[
+                UPDATE
+                 srv_aftersaler
+                SET
+                  userid = :userid,
+                  username = :username,
+                  phone = :phone,
+                  telephone = :telephone,
+                  email = :email,
+                  status = :status,
+                  area = :area,
+                  updateuser = :loginuserid,
+                  updatetime = NOW()
+                WHERE userid = :userid
+           	]]>
+    </sql>
+
+    <sql id="checkAftersaleTel">
+        <![CDATA[
+               SELECT COUNT(*) FROM srv_aftersaler WHERE phone=:phone
+               <#if userid?? && userid != ''>
+				   and   userid!=:userid
+			     </#if>
+           	]]>
+    </sql>
+
+    <sql id="RegcheckAftersaleTel">
+        <![CDATA[
+               SELECT COUNT(*) FROM srv_aftersaler WHERE phone=:phone
+           	]]>
+    </sql>
+    <sql id="RegcheckAftersaleId">
+        <![CDATA[
+               SELECT COUNT(*) FROM srv_aftersaler WHERE userid=:userid
+           	]]>
+    </sql>
+
+    <sql id="queryAfterSaleListLimit">
+        <![CDATA[
+               SELECT
+              id,
+              userid,
+              username,
+              phone,
+              telephone,
+              email,
+              STATUS
+            FROM
+              srv_aftersaler
+              WHERE del=0  and	status = 1
+              ORDER BY createtime DESC
+           	]]>
+    </sql>
+
+    <sql id="queryAfterSaleDetails">
+        <![CDATA[
+             SELECT
+              id,
+              userid,
+              username,
+              phone,
+              telephone,
+              email,
+              STATUS,
+              AREA,
+              createuser,
+              createtime,
+              updateuser,
+              updatetime,
+              del
+            FROM
+              srv_aftersaler
+              WHERE del=0  and	userid = :userid
+           	]]>
+    </sql>
+
+    <sql id="queryAreas">
+        <![CDATA[
+                SELECT
+                    id,
+                    provienceid,
+                    provience,
+                    status,
+                    userid
+                FROM
+                    srv_area  WHERE  status=0
+                <#if userid?? && userid != ''>
+                    or   userid=:userid
+                </#if>
+            ]]>
+    </sql>
+
+    <sql id="queryAreasByUserid">
+        <![CDATA[
+                SELECT
+                    id,
+                    provienceid,
+                    provience,
+                    status,
+                    userid
+                FROM
+                    srv_area  WHERE  status=1
+                    and   userid=:userid
+            ]]>
+    </sql>
+
+    <sql id="queryAllAreas">
+        <![CDATA[
+                SELECT
+                    id,
+                    provienceid,
+                    provience,
+                    status,
+                    userid
+                FROM
+                    srv_area
+            ]]>
+    </sql>
+
+    <sql id="updateAreaInfo">
+        <![CDATA[
+        UPDATE
+               srv_area
+            SET
+              status = :statusArea,
+              userid = :useridArea
+            WHERE
+              provienceid = :provienceid
+        ]]>
+    </sql>
+
+</sqlMap>

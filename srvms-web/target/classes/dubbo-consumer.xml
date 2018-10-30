@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- dubbo非生产环境去掉启动依赖校验 -->
+    <dubbo:consumer check="false"/>
+
+    <!-- 短信接口 -->
+    <dubbo:reference id="apiSmsService" interface="com.wgb.service.dubbo.sms.web.ApiSmsService"  retries="0"/>
+
+    <!-- 商户接口 -->
+    <dubbo:reference id="apiShopService" interface="com.wgb.service.dubbo.urms.admin.ApiShopService"  retries="0"/>
+
+    <!-- 用户接口 -->
+    <dubbo:reference id="apiUserService" interface="com.wgb.service.dubbo.urms.admin.ApiUserService"  retries="0"/>
+
+    <!-- 商品接口 -->
+    <dubbo:reference id="apiCommodityService" interface="com.wgb.service.dubbo.dcms.admin.ApiCommodityService"
+                      retries="0"/>
+
+    <!-- 商品接口 -->
+    <dubbo:reference id="apiBranchService" interface="com.wgb.service.dubbo.urms.admin.ApiBranchService"
+                      retries="0"/>
+
+    <!-- 查询续费订单记录接口 -->
+    <dubbo:reference id="apiRechargeOrderService" interface="com.wgb.service.dubbo.urms.admin.ApiRechargeOrderService"
+     retries="0"/>
+
+    <!-- 查询设备在线与设备异常接口 -->
+    <dubbo:reference id="apiDeviceBugService" interface="com.wgb.service.dubbo.bugms.admin.ApiDeviceBugService"
+     retries="0"/>
+
+    <!-- 查询设备异常处理接口 -->
+    <dubbo:reference id="apiEquipMonitorService" interface="com.wgb.service.dubbo.bugms.admin.ApiEquipMonitorService"
+     retries="0"/>
+    <dubbo:reference id="ApiPayIncomeService" interface="com.wgb.service.dubbo.pays.admin.ApiPayIncomeService"  retries="0"/>
+
+    <dubbo:reference id="apitWorkOrderService" interface="com.wgb.service.dubbo.workorder.web.ApitWorkOrderService"  retries="0"/>
+
+    <dubbo:reference id="apitComponentService" interface="com.wgb.service.dubbo.urms.web.ApitComponentService"  retries="0"/>
+
+    <dubbo:reference id="apitHardwareService" interface="com.wgb.service.dubbo.urms.web.ApitHardwareService"  retries="0"/>
+
+    <dubbo:reference id="serviceBillService" interface="com.wgb.service.dubbo.servicebill.ApitServiceBillService"  retries="0"/>
+    <dubbo:reference id="ApiFileService" interface="com.wgb.service.dubbo.fms.admin.ApiFileService"  retries="0" />
+
+    <dubbo:reference id="ApiPaysOrderService" interface="com.wgb.service.dubbo.pays.web.ApiPaysOrderService"  retries="0" />
+
+    <dubbo:reference id="ApitMbAssistantCodeService" interface="com.wgb.service.dubbo.mbms.web.ApitMbAssistantCodeService"  retries="0" />
+    <dubbo:reference id="apitShopService" interface="com.wgb.service.dubbo.urms.web.ApitShopService"  retries="0" />
+
+    <dubbo:reference id="ApitComponentService" interface="com.wgb.service.dubbo.urms.web.ApitComponentService"  retries="0" />
+    <dubbo:reference id="ApitBranchService" interface="com.wgb.service.dubbo.urms.web.ApitBranchService"  retries="0" />
+    <dubbo:reference id="ApitAppService" interface="com.wgb.service.dubbo.wxms.web.ApitAppService"  retries="0" />
+
+</beans>

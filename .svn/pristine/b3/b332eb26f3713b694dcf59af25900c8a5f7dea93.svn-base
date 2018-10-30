@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.SrvServiceImpl" jdbcTimeout="5">
+
+    <sql id="querySrvPageList">
+        <![CDATA[
+        SELECT
+            a.servercode,
+            a.servername,
+            a.provinceid,
+            a.cityid,
+            a.districtid,
+            a.area,
+            a.email,
+            a.tel,
+            a.zipcode,
+            a.contact,
+            a.contactaddress,
+            a.createtime,
+            a.createuser,
+            a.aftersales,
+            a.aftersalesname,
+            b.flag
+            FROM
+        pub_srv a left join  srv_user b on a.tel=b.account and a.servercode=b.servercode
+        where 1=1
+        <#if keyword?? && keyword != ''>
+				and	(a.servername like '%' :keyword '%' or a.servercode=:keyword)
+		</#if>
+		order by a.servercode
+           	]]>
+    </sql>'
+
+    <sql id="updateFlag">
+        <![CDATA[
+    update pub_srv set flag=:flag where servercode=:servercode
+           	]]>
+    </sql>
+
+    <sql id="addRegShop">
+        <![CDATA[
+		  INSERT INTO
+		  pub_srv(
+				servername,
+				provinceid,
+				cityid,
+				districtid,
+				area,
+				email,
+				tel,
+				zipcode,
+				contact,
+				contactaddress,
+				createtime,
+				createuser,
+				aftersales,
+				aftersalesname
+			       )
+			VALUES
+				(
+					:servername,
+				<#if provinceid?? && provinceid != ''>
+				    :provinceid,
+				<#else>
+				    null,
+			    </#if>
+			    <#if cityid?? && cityid != ''>
+				    :cityid,
+				<#else>
+				    null,
+			    </#if>
+			    <#if districtid?? && districtid != ''>
+				    :districtid,
+				<#else>
+				    null,
+			    </#if>
+			    <#if area?? && area != ''>
+				    :area,
+				<#else>
+				    null,
+			    </#if>
+			    <#if email?? && email != ''>
+				    :email,
+				<#else>
+				    null,
+			    </#if>
+			    <#if tel?? && tel != ''>
+				    :tel,
+				<#else>
+				    null,
+			    </#if>
+			    <#if zipcode?? && zipcode != ''>
+				    :zipcode,
+				<#else>
+				    null,
+			    </#if>
+			    <#if contact?? && contact != ''>
+				    :contact,
+				<#else>
+				    null,
+			    </#if>
+			    <#if contactaddress?? && contactaddress != ''>
+				    :contactaddress,
+				<#else>
+				    null,
+			    </#if>
+			      now(),
+			      :loginuserid,
+			     <#if aftersales?? && aftersales != ''>
+				    :aftersales,
+				<#else>
+				    null,
+			    </#if>
+			    <#if aftersalesname?? && aftersalesname != ''>
+				    :aftersalesname
+				<#else>
+				    null
+			    </#if>
+				)
+    	]]>
+    </sql>
+
+    <sql id="queryServer">
+    SELECT a.shopcode , b.servercode,b.servername,b.aftersales,b.aftersalesname,c.phone
+    FROM
+    srv_shop a,
+    pub_srv b,
+    srv_aftersaler c
+    WHERE a.shopcode=:shopcode
+    AND a.servercode=b.servercode
+    AND b.aftersales=c.userid
+</sql>
+
+    <sql id="queryService">
+        SELECT * FROM   pub_srv WHERE  1=1 and servercode=:servercode
+    </sql>
+
+    <sql id="getSrvTel">
+        SELECT tel
+        FROM
+        pub_srv
+        WHERE servercode=:servercode
+    </sql>
+
+    <sql id="querySrvDetails">
+        SELECT *
+        FROM
+        pub_srv
+        WHERE servercode=:servercode
+    </sql>
+
+    <sql id="update">
+        <![CDATA[
+        UPDATE
+                pub_srv
+        SET
+        servername = :servername,
+        provinceid = :provinceid,
+        cityid = :cityid,
+        <#if districtid?? && districtid!=''>
+        districtid = :districtid,
+        <#else>
+        districtid = null,
+         </#if>
+        area = :area,
+        email = :email,
+        tel = :tel,
+        contact = :contact,
+        contactaddress = :contactaddress,
+        updatetime = NOW(),
+        updateuser = :loginuserid,
+        aftersales = :aftersales,
+        aftersalesname = :aftersalesname
+        WHERE servercode = :servercode
+        	]]>
+    </sql>
+
+</sqlMap>

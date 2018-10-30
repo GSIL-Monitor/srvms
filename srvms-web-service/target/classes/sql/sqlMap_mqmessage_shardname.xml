@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.mq.MQMessageServiceImpl" jdbcTimeout="5">
+
+	<!--插入esb报文表数据 -->
+	<sql id="insertMQMessage">
+		<![CDATA[
+    	    INSERT INTO pub_mqmessage
+			(
+				message,
+				checkstatus,
+				isrepeat,
+				servernode,
+				createtime,
+				beanid,
+				topic,
+				servicename
+			)
+			VALUES
+			(
+				:message,
+				0,
+				0,
+				:servernode,
+				now(),
+				:beanid,
+				:topic,
+				:servicename
+			)
+    	]]>
+	</sql>
+
+	<!-- 根据主键id更新报文数据 -->
+	<sql id="updateMQMessageById">
+		<![CDATA[
+   		update
+			pub_mqmessage
+		set
+			checkstatus = :checkstatus,
+			errorreason = :errorreason,
+			updatetime = now()
+		where
+			id = :messageid
+    	]]>
+	</sql>
+
+	<!-- 根据主键id更新esb报文数据 -->
+	<sql id="updateMQMessageById2">
+		<![CDATA[
+   		update
+			pub_mqmessage
+		set
+			checkstatus = :checkstatus,
+			isrepeat = :isrepeat,
+			errorreason = :errorreason,
+			updatetime = now()
+		where
+			id = :messageid
+    	]]>
+	</sql>
+
+	<!-- 根据主键id和接口报文类型查询报文体 -->
+	<sql id="selectMQMessageById">
+		<![CDATA[
+   			select
+				a.id as "messageid",
+				a.message as "message",
+				a.checkstatus as "checkstatus",
+				a.createtime as "receivemessagetime"
+			from
+				pub_mqmessage a
+			where
+				a.checkstatus = 0
+				and a.id = : messageid
+    	 ]]>
+	</sql>
+
+	<!--根据主键id删除esb报文数据 -->
+	<sql id="deleteMQMessageById">
+		<![CDATA[
+   		delete
+		from
+			pub_mqmessage
+		where
+			id = :messageid
+    	]]>
+	</sql>
+
+	<!-- 查询报文信息数据 -->
+	<sql id="queryXmlMessage">
+		<![CDATA[
+			select
+				a.id  as "messageid",
+				a.servicename as "servicename",
+				a.message    as "message",
+				a.checkstatus   as "checkstatus",
+				a.errorreason   as "errorreason",
+				a.servernode    as "servernode",
+				a.createtime    as "receivemessagetime",
+				a.updatetime    as "updatetime",
+				a.beanid        as "beanid"
+	    	from
+	    		pub_mqmessage a
+	        where
+	            a.checkstatus <> 0
+	            <#if (createbtime?exists&&createbtime!='')&&(createetime?exists&&createetime!='') >
+					and a.createtime  >= :createbtime
+					and a.createtime  < date_add(:createetime, interval 1 day)
+			    </#if>
+			    <#if (createbtime?exists&&createbtime!='')&&(createetime?exists&&createetime=='') >
+					and a.createtime  >= :createbtime
+					and a.createtime  < date_add(:createbtime, interval 1 day)
+			    </#if>
+			    <#if (createetime?exists&&createetime!='')&&(createbtime?exists&&createbtime=='') >
+					and a.createtime  >=  :createetime
+					and a.createtime  <  date_add(:createetime, interval 1 day)
+			    </#if>
+			    <#if servicename?exists && servicename!=''>
+			        and a.servicename = :servicename
+				</#if>
+				<#if keyword?exists && keyword!=''>
+			        and a.message like '%' :keyword '%'
+				</#if>
+				<#if messageids?exists && messageids!=''>
+			        and a.id in (${messageids})
+				</#if>
+				order by a.createtime desc
+		]]>
+	</sql>
+
+	<sql id="deleteMessageById">
+		<![CDATA[
+   		 delete
+   		    from pub_mqmessage
+         where
+            id in (${messageids})
+    	 ]]>
+	</sql>
+
+	<!--插入esb报文异常日志表数据 -->
+	<sql id="insertMQErrorMessageLog">
+		<![CDATA[
+    	    insert into pub_mqmessagelog
+			(	servicename,
+				message,
+				checkstatus,
+				errorreason,
+				servernode,
+				errorcreatetime,
+				errorupdatetime,
+				operatetask,
+				operatestatus,
+				operateman,
+				operatecomments,
+				createtime,
+				operateip
+			)
+			values
+			(
+				:servicename,
+				:message,
+				:checkstatus,
+				:errorreason,
+				:servernode,
+				:receivemessagetime,
+				:updatetime,
+				:operatetask,
+				:operatestatus,
+				:operateman,
+				:operatecomments,
+				now(),
+				<#if operateip?exists>
+				:operateip
+				<#else>
+				''
+				</#if>
+			)
+    	]]>
+	</sql>
+
+</sqlMap>
