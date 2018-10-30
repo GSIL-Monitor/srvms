@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.SrvUserRoleServiceImpl" jdbcTimeout="5">
+
+	<sql id="insertUserRole">
+		<![CDATA[
+		    INSERT INTO srv_user_role(userid, roleid,createuser,createtime)
+		    VALUES(:userid,:roleid,:loginuserid,now())
+    	]]>
+	</sql>
+
+	<sql id="insertRegInit">
+		<![CDATA[
+		    INSERT INTO srv_user_role(userid, roleid,createtime)
+		    VALUES(:userid,:roleid,now())
+    	]]>
+	</sql>
+
+	<sql id="getRoleListByUserId">
+		select b.* from srv_user_role a inner join srv_role b on a.roleid = b.id where userid = :userid
+	</sql>
+
+	<sql id="deleteUserRole">
+		<![CDATA[
+			delete from srv_user_role where 1=1
+			<#if userid?? && userid != ''>
+				and userid = :userid
+			</#if>
+			<#if roleid?? && roleid != ''>
+				and roleid = :roleid
+			</#if>
+    	]]>
+	</sql>
+
+	<sql id="regInsertUserRole">
+		<![CDATA[
+		    INSERT INTO srv_user_role(userid,roleid,createtime,required)
+			VALUES(
+			<#if userid?? && userid != ''>
+				:userid,
+				<#else>
+				null,
+			</#if>
+			<#if roleid?? && roleid != ''>
+				:roleid,
+				<#else>
+				null,
+			</#if>
+			now(),
+			<#if required?? && required != ''>
+				:required
+				<#else>
+				0
+			</#if>
+			)
+    	]]>
+	</sql>
+
+</sqlMap>

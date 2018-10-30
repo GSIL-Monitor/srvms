@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/../srvms-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../srvms-admin-intf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../srvms-admin-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../srvms-common-intf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../srvms-common-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../srvms-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../srvms-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../srvms-web-intf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../srvms-web-service" charset="UTF-8" />
+  </component>
+</project>

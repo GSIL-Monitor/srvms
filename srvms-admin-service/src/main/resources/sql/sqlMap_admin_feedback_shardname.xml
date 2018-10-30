@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.admin.AdminFeedbackServiceImpl" jdbcTimeout="5">
+
+    <sql id="queryPageList">
+        <![CDATA[
+           select a.*,b.servername FROM pub_feedback a inner join pub_srv b on b.servercode = a.servercode
+           where 1=1
+              <#if keyword?? && keyword != ''>
+			   	  and (a.submitter = :keyword or a.title LIKE '%' :keyword '%' )
+			 </#if>
+			  <#if starttime?? && starttime != ''>
+			   		and a.committime >= timestamp(:starttime)
+				   </#if>
+			     <#if endtime?? && endtime != ''>
+			   		and a.committime < date_add(timestamp(:endtime),interval 1 day)
+			   </#if>
+
+			  order by a.committime desc
+    	]]>
+    </sql>
+
+    <sql id="getFeedbackInfo">
+        <![CDATA[
+           select * FROM pub_feedback
+           where id=:id
+    	]]>
+    </sql>
+
+
+</sqlMap>

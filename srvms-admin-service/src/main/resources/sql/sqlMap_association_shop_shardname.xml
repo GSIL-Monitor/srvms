@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.SrvAssociationShopServiceImpl" jdbcTimeout="5">
+
+    <sql id="queryPageList">
+        <![CDATA[
+		   select    id,
+                     servercode,
+                     serverusername,
+                     servertel,
+                     serverarea,
+                     shopcode,
+                     shopname,
+                     shopusername,
+                     shoptel,
+                     shoparea,
+                     status,
+                     createtime,
+                     createuser
+           from srv_association
+           where 1=1
+            <#if keyword?? && keyword != ''>
+                        and	servercode = :keyword
+            </#if>
+           <#if status?? && status != ''>
+                        and	status = :status
+           </#if>
+          <#if starttime?? && starttime != ''>
+				and createtime >= timestamp(:starttime)
+            </#if>
+          <#if endtime?? && endtime != ''>
+			   		and createtime <= timestamp(:endtime)
+		  </#if>
+           order by createtime desc
+    	]]>
+    </sql>
+
+    <sql id="getApplyAssociationData">
+        <![CDATA[
+		   select    id,
+                     servercode,
+                     serverusername,
+                     servertel,
+                     serverarea,
+                     shopcode,
+                     shopname,
+                     shopusername,
+                     shoptel,
+                     shoparea,
+                     status,
+                     remark,
+                     createtime,
+                     createuser
+           from srv_association
+           where id=:id
+    	]]>
+    </sql>
+
+    <sql id="updateAssociation">
+        <![CDATA[
+		   update srv_association set updatetime=now(),
+		   status=:status,
+
+             <#if remark?? && remark != ''>
+                   remark=:remark
+               <#else>
+                   remark=null
+           </#if>
+           where id=:id
+    	]]>
+    </sql>
+
+</sqlMap>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="srvms-admin" />
+        <module name="srvms-admin-intf" />
+        <module name="srvms-admin-service" />
+        <module name="srvms-common-intf" />
+        <module name="srvms-common-service" />
+        <module name="srvms-util" />
+        <module name="srvms-web" />
+        <module name="srvms-web-intf" />
+        <module name="srvms-web-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="srvms-admin" target="1.7" />
+      <module name="srvms-admin-intf" target="1.7" />
+      <module name="srvms-admin-service" target="1.7" />
+      <module name="srvms-common-intf" target="1.7" />
+      <module name="srvms-common-service" target="1.7" />
+      <module name="srvms-pom" target="1.7" />
+      <module name="srvms-util" target="1.7" />
+      <module name="srvms-web" target="1.7" />
+      <module name="srvms-web-intf" target="1.7" />
+      <module name="srvms-web-service" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

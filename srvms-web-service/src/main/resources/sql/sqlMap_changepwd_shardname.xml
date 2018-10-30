@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.changepwd.ChangePwdServiceImpl" jdbcTimeout="5">
+
+    <sql id="queryOldPwd">
+        <![CDATA[
+            select
+                password
+            from
+                srv_user
+            where
+                id= :loginuserid
+        ]]>
+    </sql>
+
+    <sql id="updateObject">
+        <![CDATA[
+            update
+                srv_user
+            set
+                password=:newpassword
+            where
+                id = :loginuserid
+	    ]]>
+    </sql>
+
+</sqlMap>

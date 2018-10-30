@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.message.AdminMessageServiceImpl" jdbcTimeout="5">
+
+    <sql id="queryAdminMessage">
+        <![CDATA[
+            select
+                id,
+                status,
+                sendobj,
+                title,
+                sendtime,
+                createtime
+            from
+                srv_message
+            where valid = '1'
+            <#if starttime?? && starttime != ''>
+                 and date_format(createtime, '%Y-%m-%d') >= date_format(:starttime, '%Y-%m-%d')
+		     </#if>
+		      <#if endtime?? && endtime != ''>
+                 and date_format(createtime, '%Y-%m-%d') <= date_format(:endtime, '%Y-%m-%d')
+		     </#if>
+            order by status,createtime desc
+    	]]>
+    </sql>
+
+    <sql id="updateMessageStatusById">
+        <![CDATA[
+            update srv_message set status = '1',sendtime = now() where id = :id
+    	]]>
+    </sql>
+
+    <sql id="deleteMessageById">
+        <![CDATA[
+            update srv_message set valid = '0',updatetime = now() where id = :id and status = '0'
+    	]]>
+    </sql>
+
+
+    <sql id="updateMessageById">
+        <![CDATA[
+            update srv_message set
+                title = :title,
+                data = :data,
+                updatetime = now()
+            where id = :id
+    	]]>
+    </sql>
+
+    <sql id="saveMessage">
+        <![CDATA[
+            insert into srv_message (
+                servercode,
+                allserver,
+                title,
+                data,
+                createtime
+            ) values(
+                <#if allserver?? && allserver != ''>
+                    null,
+                    1,
+                    <#else>
+                    :servercode,
+                    0,
+                </#if>
+                :title,
+                :data,
+                now()
+            )
+    	]]>
+    </sql>
+
+    <sql id="queryMessageDetail">
+        <![CDATA[
+            select
+                id,
+                servercode,
+                allserver,
+                title,
+                data
+            from srv_message where id = :id and valid = '1'
+    	]]>
+    </sql>
+
+
+</sqlMap>

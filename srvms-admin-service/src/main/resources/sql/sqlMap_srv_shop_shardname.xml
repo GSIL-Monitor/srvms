@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardName.com.wgb.service.impl.srv.SrvShopServiceImpl" jdbcTimeout="5">
+
+    <sql id="querySrvRegShopCount">
+        <![CDATA[
+		     SELECT
+		        count(1) as srvregshop
+                FROM srv_shop WHERE servercode =:servercode AND issrvreg=1
+    	]]>
+    </sql>
+
+    <sql id="querySrvAssociationShopCount">
+        <![CDATA[
+		     SELECT
+		        count(1) as associationshop
+                FROM srv_shop WHERE servercode =:servercode AND issrvreg=0
+    	]]>
+    </sql>
+
+    <sql id="getAssociationSrv">
+        <![CDATA[
+		     SELECT
+		        servercode
+                FROM srv_shop WHERE shopcode =:shopcode
+    	]]>
+    </sql>
+
+    <sql id="getAssociationSrv">
+        <![CDATA[
+		     SELECT
+		        servercode
+                FROM srv_shop WHERE shopcode =:shopcode
+    	]]>
+    </sql>
+
+    <sql id="addSrvShop">
+        <![CDATA[
+    	    INSERT INTO srv_shop
+			(
+				servercode,
+				shopcode,
+				createtime,
+				createuser,
+				issrvreg
+			)
+			VALUES
+			(
+				:servercode,
+				:shopcode,
+				now(),
+				:loginuserid,
+               <#if issrvreg?? && issrvreg != ''>
+				:issrvreg
+				<#else>
+				0
+			</#if>
+			)
+    	]]>
+    </sql>
+
+    <sql id="getServercode">
+        <![CDATA[
+    	  select servercode from srv_shop  where shopcode=:shopcode
+    	]]>
+    </sql>
+
+    <sql id="getSrvShopInfo">
+        <![CDATA[
+              select  servercode,
+                      servername,
+                      provinceid,
+                      cityid,
+                      districtid,
+                      area,
+                      email,
+                      tel,
+                      zipcode,
+                      contact,
+                      contactaddress,
+                      createtime,
+                      updatetime,
+                      createuser,
+                      updateuser,
+                      flag,
+                      aftersales,
+                      aftersalesname
+              from pub_srv where servercode=:servercode
+            ]]>
+    </sql>
+
+</sqlMap>

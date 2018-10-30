@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../srvms-admin/srvms-admin.iml" filepath="$PROJECT_DIR$/../srvms-admin/srvms-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../srvms-admin-intf/srvms-admin-intf.iml" filepath="$PROJECT_DIR$/../srvms-admin-intf/srvms-admin-intf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../srvms-admin-service/srvms-admin-service.iml" filepath="$PROJECT_DIR$/../srvms-admin-service/srvms-admin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../srvms-common-intf/srvms-common-intf.iml" filepath="$PROJECT_DIR$/../srvms-common-intf/srvms-common-intf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../srvms-common-service/srvms-common-service.iml" filepath="$PROJECT_DIR$/../srvms-common-service/srvms-common-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/srvms-pom.iml" filepath="$PROJECT_DIR$/srvms-pom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../srvms-util/srvms-util.iml" filepath="$PROJECT_DIR$/../srvms-util/srvms-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../srvms-web/srvms-web.iml" filepath="$PROJECT_DIR$/../srvms-web/srvms-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../srvms-web-intf/srvms-web-intf.iml" filepath="$PROJECT_DIR$/../srvms-web-intf/srvms-web-intf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../srvms-web-service/srvms-web-service.iml" filepath="$PROJECT_DIR$/../srvms-web-service/srvms-web-service.iml" />
+    </modules>
+  </component>
+</project>

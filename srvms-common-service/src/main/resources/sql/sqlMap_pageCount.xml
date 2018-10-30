@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="shardShopCode.com.wgb.service.impl.BaseDalClient"
+	jdbcTimeout="5">
+
+	<sql id="PageSqlCount">
+      <![CDATA[ 
+         SELECT count(1) "TOTALCOUNT" FROM (${sqlForPage}) AS TEMP
+      ]]>
+	</sql>
+
+	<sql id="PageSql">
+      <![CDATA[ 
+      	${sqlForPage} limit :minRow ,:pageSize
+      ]]>
+	</sql>
+
+</sqlMap>

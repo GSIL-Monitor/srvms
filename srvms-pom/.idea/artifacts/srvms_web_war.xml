@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="srvms-web:war">
+    <output-path>$PROJECT_DIR$/../srvms-web/target</output-path>
+    <root id="archive" name="srvms-web-1.0.0.war">
+      <element id="artifact" artifact-name="srvms-web:war exploded" />
+    </root>
+  </artifact>
+</component>
